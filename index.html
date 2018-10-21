@@ -4,8 +4,81 @@
     <title>Tiny/Massive</title>
 </head>
 <body>
-    <h1>Tiny/Massive</h1>
-    <p></p>
+    <style>
+    * {
+        border:0;
+        margin:0;
+        padding:0;
+    }
+    body {
+        position:fixed;
+        /*background-color:black;*/
+    }
+    .radio {
+        position:relative;
+        display:inline-block;
+        text-align:center;
+        width:var(--radio-width);
+        height:var(--radio-height);
+        line-height:var(--radio-height);
+        width:calc(100vw / 32);
+        height:calc(100vh / 32);
+        line-height:calc(100vh / 32);
+    }
 
+    .radio label {
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+    }
+
+    </style>
+    <script>
+
+        var vw, vw;
+
+        const xmax = 32;
+        const ymax = 32;
+
+        update = () => {
+            vw = window.innerWidth;
+            vh = window.innerHeight;
+            width = vw / xmax;
+            height = vh / ymax;
+            console.log(vh, height);
+            // document.body.style = `--radio-width: ${width}px; --radio-height: ${height}px`;
+        }
+
+        window.onresize = () => {
+            update();
+        }
+
+        window.onload = e => {
+
+            for (var yi = 0; yi < ymax; yi++){
+                for (var xi = 0; xi < xmax; xi++){
+                    var radioName = `y${yi}x${xi}`;
+                    var radioGroup = document.createElement('div');
+                    radioGroup.classList.add('radio');
+                    var radioEl = document.createElement('input');
+                    radioEl.type = 'radio';
+                    radioEl.id = radioName;
+                    if (Math.random() > 0.5) radioEl.checked = true;
+                    var radioLabel = document.createElement('label');
+                    radioLabel.setAttribute('for',radioName);
+                    radioGroup.appendChild(radioEl);
+                    radioGroup.appendChild(radioLabel);
+                    document.body.appendChild(radioGroup);
+                }
+                var br = document.createElement('br');
+                document.body.appendChild(br);
+            }
+
+            update();
+        }
+
+    </script>
 </body>
 </html>

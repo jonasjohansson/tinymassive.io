@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tiny/Massive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        <span class="tiny">tiny</span>
+        <span class="massive">massive</span>
+    </h1>
+    <script>
+        const tiny = $('.tiny')
+        const massive = $('.massive')
+
+        const scale = 2.75;
+
+        function calc(){
+            tiny.style.transform = `scale(${aspect}, ${scale * 0.5}) translate(-1.5vh,-10.9vh)`;
+            massive.style.transform = `scale(${aspect*0.47}, ${scale * 0. }) translate(-1.5vh,-45.9vh)`;
+        }
+
+        window.onresize = e => {
+            update();
+            calc();
+        }
+
+        function update(){
+            vw = window.innerWidth;
+            vh = window.innerHeight;
+            aspect = vw / vh;
+            // aspect = vh / vw;
+        }
+
+        function $(n) {
+            return document.querySelector(n)
+        }
+
+        update();
+        calc();
+    </script>
+</body>
+</html>
