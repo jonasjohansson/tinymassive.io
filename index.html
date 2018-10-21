@@ -14,19 +14,19 @@
         position:fixed;
         /*background-color:black;*/
     }
-    .radio {
+    .input {
         position:relative;
         display:inline-block;
         text-align:center;
-        width:var(--radio-width);
-        height:var(--radio-height);
-        line-height:var(--radio-height);
+        width:var(--input-width);
+        height:var(--input-height);
+        line-height:var(--input-height);
         width:calc(100vw / 32);
         height:calc(100vh / 32);
         line-height:calc(100vh / 32);
     }
 
-    .radio label {
+    .input label {
         position:absolute;
         width:100%;
         height:100%;
@@ -48,7 +48,7 @@
             width = vw / xmax;
             height = vh / ymax;
             console.log(vh, height);
-            // document.body.style = `--radio-width: ${width}px; --radio-height: ${height}px`;
+            // document.body.style = `--input-width: ${width}px; --input-height: ${height}px`;
         }
 
         window.onresize = () => {
@@ -59,18 +59,18 @@
 
             for (var yi = 0; yi < ymax; yi++){
                 for (var xi = 0; xi < xmax; xi++){
-                    var radioName = `y${yi}x${xi}`;
-                    var radioGroup = document.createElement('div');
-                    radioGroup.classList.add('radio');
-                    var radioEl = document.createElement('input');
-                    radioEl.type = 'radio';
-                    radioEl.id = radioName;
-                    if (Math.random() > 0.5) radioEl.checked = true;
-                    var radioLabel = document.createElement('label');
-                    radioLabel.setAttribute('for',radioName);
-                    radioGroup.appendChild(radioEl);
-                    radioGroup.appendChild(radioLabel);
-                    document.body.appendChild(radioGroup);
+                    var inputName = `y${yi}x${xi}`;
+                    var inputGroup = document.createElement('div');
+                    inputGroup.classList.add('input');
+                    var inputEl = document.createElement('input');
+                    inputEl.type = 'checkbox';
+                    inputEl.id = inputName;
+                    if (Math.random() > 0.5) inputEl.checked = true;
+                    var inputLabel = document.createElement('label');
+                    inputLabel.setAttribute('for',inputName);
+                    inputGroup.appendChild(inputEl);
+                    inputGroup.appendChild(inputLabel);
+                    document.body.appendChild(inputGroup);
                 }
                 var br = document.createElement('br');
                 document.body.appendChild(br);

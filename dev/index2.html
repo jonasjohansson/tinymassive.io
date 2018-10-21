@@ -9,6 +9,11 @@
         <span class="tiny">tiny</span>
         <span class="massive">massive</span>
     </h1>
+    <style>
+    span {
+        font-variation-settings: 'wght' var(--font-weight), 'wdth' var(--font-width);
+    }
+    </style>
     <script>
         const tiny = $('.tiny')
         const massive = $('.massive')
@@ -16,8 +21,10 @@
         const scale = 2.75;
 
         function calc(){
+            tiny.setAttribute('style',`--font-weight: ${1}; --font-width: ${1};`)
+            massive.setAttribute('style',`--font-weight: ${800}; --font-width: ${33};`)
             tiny.style.transform = `scale(${aspect}, ${scale * 0.5}) translate(-1.5vh,-10.9vh)`;
-            massive.style.transform = `scale(${aspect*0.47}, ${scale * 0. }) translate(-1.5vh,-45.9vh)`;
+            massive.style.transform = `scale(${aspect*0.47}, ${scale * 0.5}) translate(-1.5vh,-45.9vh)`;
         }
 
         window.onresize = e => {
