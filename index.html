@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tiny/Massive</title>
+    <title>TINY/MASSIVE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+    html {
+        font-family:system-ui;
+        background-color:rgba(0,0,0,0.94);
+        color:rgba(255,255,255,0.9);
+    }
+    hr {
+        border-top:0;
+    }
+    img {
+        width:100%;
+    }
+    footer img {
+        width:120px;
+        margin-right:10px;
+    }
+    </style>
 </head>
 <body>
-    <style>
-    * {
-        border:0;
-        margin:0;
-        padding:0;
-    }
-    body {
-        position:fixed;
-        /*background-color:black;*/
-    }
-    .input {
-        position:relative;
-        display:inline-block;
-        text-align:center;
-        width:var(--input-width);
-        height:var(--input-height);
-        line-height:var(--input-height);
-        width:calc(100vw / 32);
-        height:calc(100vh / 32);
-        line-height:calc(100vh / 32);
-    }
-
-    .input label {
-        position:absolute;
-        width:100%;
-        height:100%;
-        top:0;
-        left:0;
-    }
-
-    </style>
-    <script>
-
-        var vw, vw;
-
-        const xmax = 32;
-        const ymax = 32;
-
-        update = () => {
-            vw = window.innerWidth;
-            vh = window.innerHeight;
-            width = vw / xmax;
-            height = vh / ymax;
-            console.log(vh, height);
-            // document.body.style = `--input-width: ${width}px; --input-height: ${height}px`;
-        }
-
-        window.onresize = () => {
-            update();
-        }
-
-        window.onload = e => {
-
-            for (var yi = 0; yi < ymax; yi++){
-                for (var xi = 0; xi < xmax; xi++){
-                    var inputName = `y${yi}x${xi}`;
-                    var inputGroup = document.createElement('div');
-                    inputGroup.classList.add('input');
-                    var inputEl = document.createElement('input');
-                    inputEl.type = 'checkbox';
-                    inputEl.id = inputName;
-                    if (Math.random() > 0.5) inputEl.checked = true;
-                    var inputLabel = document.createElement('label');
-                    inputLabel.setAttribute('for',inputName);
-                    inputGroup.appendChild(inputEl);
-                    inputGroup.appendChild(inputLabel);
-                    document.body.appendChild(inputGroup);
-                }
-                var br = document.createElement('br');
-                document.body.appendChild(br);
-            }
-
-            update();
-        }
-
-    </script>
+    <header>
+        <h1>TINY/MASSIVE</h1>
+        <p><a href="http://nava.community/">Nordic Audiovisual Artists</a> presents Tiny/Massive, a series of artistic interventions where dynamic architecture transforms into a creative canvas of light.</p>
+    </header>
+    <hr>
+    <main>
+        <h2>Open call #1</h2>
+        <p><em>Winter Lights Festival 2019<br>7th — 10th February</em></p>
+        <p>For the very first edition of TINY/MASSIVE you are invited to illuminate the Harpa concert hall during the Reykjavik Winter Lights Festival. We are looking for work that draws inspiration from the architecture of Harpa and the raw nature that surrounds it.</p>
+        <p>You can apply with either <em>video</em> or <em>generative / interactive experiences</em> and the selected works will be displayed during the festival between 18.00-24.00.</p>
+        <img src="./assets/harpa.jpg">
+        <p><em>Previous work at Harpa: <a href="https://vimeo.com/122900808">Harpa Pong (2015)</a>, <a href="https://vimeo.com/161909071">Harpa Lights (2016)</a>, <a href="https://vimeo.com/169834486">Harpa Light Organ (2016)</a>, <a href="https://vimeo.com/208312871">Harpa Lights (2017)</a></em></p>
+        <hr>
+        <h3>Apply</h3>
+        <ul>
+            <li>Application deadline: 16th of December 2018, 24:00 CET</li>
+            <li><a href="https://goo.gl/forms/3H5Fq7omWalWrx252" target="_blank">Application form</a></li>
+        </ul>
+        <h4>Technical specifications</h4>
+        <ul>
+            <li>Resolution Left Facade: 38x33px</li>
+            <li>Resolution Right Facade: 39x9px</li>
+            <li>Video Length: 2-10 minutes</li>
+            <li>Video encoding: Uncompressed</li>
+            <li>Sound: Optional, but highly recommended</li>
+        </ul>
+        <h4>We welcome submissions that fit the following criteria</h4>
+        <ul>
+            <li>Work that emphasises a close relationship between image and sound</li>
+            <li>Interactive experiences that invite audience participation</li>
+        </ul>
+        <h4>Please note</h4>
+        <ul>
+            <li>Due to the tiny resolution but massive size of Harpa it's important to be very considerate of contrast and pace. Subtle gradients that may be visible on a computer monitor will likely not present well on the building.</li>
+            <li>Make use of the unique fact that Harpa has two facades with unique designs and resolutions.</li>
+        </ul>
+        <hr>
+        <h3>Schedule</h3>
+        <ul>
+            <li>18.11.01 Open call start</li>
+            <li>18.12.16 Open call end</li>
+            <li>18.12.22 Invited artists announced by email (if you have not received an email it means you were not selected)</li>
+            <li>19.02.07 Winter Lights Festival start</li>
+            <li>19.02.10 Winter Lights Festival end</li>
+        </ul>
+        <hr>
+        <h3 id="terms-and-conditions">Terms and Conditions</h3>
+        <ul>
+            <li>There is no entry fee.</li>
+            <li>No restrictions apply regarding the concept of the artwork, with the exception of works that offend human dignity or support discrimination against individuals or group of people based on behavior, race, nationality or sexuality.</li>
+            <li>Submissions can only be accepted via the online forms.</li>
+            <li>Once a submission is made it is final. It cannot be amended or withdrawn.</li>
+            <li>Submissions that do not include all requested documents and files will be considered incomplete and may not be accepted.</li>
+            <li>Artists whose work is selected will be notified via email. In any cases where additional files will be needed, artists will be asked to upload these through email correspondence.</li>
+            <li>By submitting a work the artists agree to allow TINY/MASSIVE to document their work with video and photography. Any future usage of these images and recordings will be in order to promote the artist and TINY/MASSIVE. Video excerpts for online use will be kept to under 5 minutes and any longer excerpts of the artists work, or alternative use of images or recordings in a different context be sort, full consent would be sought from the artist beforehand via email.</li>
+            <li>All submissions must be able to be included in compilations, press or promotion that represent TINY/MASSIVE and Winter Lights Festival.</li>
+            <li>The festival has no responsibility for copyright of works that include images or music created by others than the submitting artist.</li>
+        </ul>
+    </main>
+    <hr>
+    <footer>
+        <p>This open call is made possible by lots of love, late hours and unpaid work.</p>
+        <img src="./assets/nordisk-kulturfond.png">
+        <img src="./assets/city-of-reykjavik.png">
+    </footer>
 </body>
 </html>
