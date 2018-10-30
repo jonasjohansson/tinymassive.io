@@ -45,7 +45,8 @@
 				<li>Application deadline: 16th of December 2018, 24:00 CET</li>
 				<li><a href="https://goo.gl/forms/3H5Fq7omWalWrx252" target="_blank">Application form</a></li>
 			</ul>
-			<h4>Technical specifications</h4>
+			<p>Please <a href="https://join.slack.com/t/tiny-massive/shared_invite/enQtNDY1MjQwMjY4NzY4LTlhZDgxZTJmZDIxOTQ0MDY5Y2I1MWQ0MDYyMjEyMmVlNGFiNDNhMTlmMmEyNzEwMTI3YWRjNzJhMzkzZGIzNjk">join our Slack</a> for creative discussions around your idea. We have lots of experience and are willing to help make your contribution the best it can be!</p>
+			<h4>Technical specifications - video</h4>
 			<ul>
 				<li>Resolution Left Facade: 39x9px</li>
 				<li>Resolution Right Facade: 38x13px</li>
@@ -55,8 +56,33 @@
 				<li>Video format: Quicktime</li>
 				<li>Sound: Optional, but highly recommended</li>
 			</ul>
-			<p>For games / interactive content we expect a Mac app that runs and displays graphics in the correct resolution. It's also possible to provide a Touch Designer file, ask in the Slack channel for more info.</p>
-			<p>Please <a href="https://join.slack.com/t/tiny-massive/shared_invite/enQtNDY1MjQwMjY4NzY4LTlhZDgxZTJmZDIxOTQ0MDY5Y2I1MWQ0MDYyMjEyMmVlNGFiNDNhMTlmMmEyNzEwMTI3YWRjNzJhMzkzZGIzNjk">join our Slack</a> for creative discussions around your idea. We have lots of experience and are willing to help make your contribution the best it can be!</p>
+			<h4>Interactive/generative works</h4>
+			<ul>
+				<li>Resolution - as above. <br/>(Applications can display graphics outside of this area, e.g. a scaled up version for debugging.)</li>
+				<li>Delivery format: either macOS 10.11+ executable, or self-contained web app, compatible with Chrome.</li>
+				<li>Application window should appear at 0,0 on launch</li>
+				<li>Interactive works should have a 'cycle' of interaction less than 2 minutes</li>
+				<li>If your work is a game, you should clearly acknowledge the 'end state'</li>
+				<li>We will be providing template projects for Unity and HTML/JS apps in the coming weeks.</li>
+			</ul>
+			<b>Interaction</b>
+			<ul>
+				<li>We will be providing controls, in a sheltered location opposite Harpa (likely outside the Central Bank building) for interactive works.</li>
+				<li>The controls will be two joysticks, and 4 generic arcade buttons, located in pairs next to each joystick.</li>
+				<li>We will take care of transmitting control messages to your application. You should listen out for the following key presses:
+					<ul>
+						<li><code>W, A, S, D</code> (joystick 1 up/left/down/right)</li>
+						<li><code>I, J, K, L</code> (joystick 2 up/left/down/right)</li>
+						<li><code>Q, E, U, O</code> (4 generic buttons)</li>
+						<li><code>0 </code> (Important: this button should reset the game state.)</li>
+					</ul>
+				</li>
+			</ul>
+
+		<!-- 	
+
+			<p>For games / interactive content we expect a Mac app that runs and displays graphics in the correct resolution. It's also possible to provide a Touch Designer file, ask in the Slack channel for more info.</p> -->
+			
 			<!-- <h4>Please note</h4>
 			<ul>
 				<li>Due to the tiny resolution but massive size of Harpa it's important to be very considerate of contrast and pace. Subtle gradients that may be visible on a computer monitor will likely not present well on the building.</li>
