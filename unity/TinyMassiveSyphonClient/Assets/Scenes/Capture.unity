@@ -2463,6 +2463,7 @@ MonoBehaviour:
   Width: 77
   Height: 13
   yOffset: 0
+  cropShader: {fileID: 4800000, guid: d1736fc20bfc44dbfaf4689454dc8c5f, type: 3}
 --- !u!1 &1500752925
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,7 +2964,6 @@ GameObject:
   - component: {fileID: 1562138602}
   - component: {fileID: 1562138605}
   - component: {fileID: 1562138604}
-  - component: {fileID: 1562138603}
   m_Layer: 0
   m_Name: CroppedOutput
   m_TagString: Untagged
@@ -2984,23 +2984,6 @@ Transform:
   m_Father: {fileID: 1453354861}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!114 &1562138603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1562138601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b79770b2944d4cdeb52083e0a22da31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _appName: ScreenCaptureSyphon
-  _serverName: 
-  _targetTexture: {fileID: 8400000, guid: b3d95749a3d22431ca4e18864d5bc9ed, type: 2}
-  _targetRenderer: {fileID: 1562138604}
-  _targetMaterialProperty: _MainTex
-  _nullTexture: {fileID: 2800000, guid: 4d452f854bc6b43488690d49f3cd2e9c, type: 3}
 --- !u!23 &1562138604
 MeshRenderer:
   m_ObjectHideFlags: 0

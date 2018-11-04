@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 using UnityEngine.Events;
 using TMPro;
 
+[ExecuteInEditMode]
 public class CropSyphonToTexture : MonoBehaviour {
 
 	public TMP_InputField yOffsetInput;
@@ -21,15 +22,22 @@ public class CropSyphonToTexture : MonoBehaviour {
 	public int yOffset = 0;
 
 	private Material material;
+	public Shader cropShader;
 
 	// Use this for initialization
 	void Start () {
-		
+		material = new Material(cropShader);
+
+		UpdateSettings();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void LateUpdate () {
+
+		material.SetInt("_Width", Width);
+		material.SetInt("_Height", Height);
+		material.SetInt("_YOffset", yOffset);
+
+		Graphics.Blit(sourceTexture, targetTexture, material);
 	}
 
 	public void UpdateSettings(){
@@ -39,6 +47,11 @@ public class CropSyphonToTexture : MonoBehaviour {
 
 		yOffset = int.Parse(yOffsetInput.text);
 
-		
+		Width = Mathf.Min(1, Width);
+		Height = Mathf.Min(1, Height);
+		yOffset = Mathf.Min(Height, yOffset);
+
+
+
 	}
 }
