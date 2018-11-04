@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visualiser</title>
+	<meta charset="utf-8">
+	<script src="./assets/js/HarpaVisualiserBase.js"></script>
+	<script src="./assets/js/HarpaSVGFixtureView.js"></script>
+	<script src="./assets/js/HarpaCanvasFixtureView.js"></script>
+	<script src="./assets/js/visualisers/HarpaVideoVisualiser.js"></script>
+	<script src="./assets/js/App.js"></script>
+	<link rel="stylesheet" href="https://jonasjohansson.github.io/template/template-raw.css">
+	<link rel="stylesheet" href="../assets/style.css">
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Visualiser</h1>
+		<div id="canvasContainer">
+			<div class="visualiserContainer" id="sideContainer">
+				<h2>Side Facade</h2>
+			</div>
+			<div class="visualiserContainer" id="frontContainer">
+				<h2>Front Facade</h2>
+			</div>
+		</div>
+		<h2>Textures</h2>
+		<div id="textureContainer">
+			<div id="sideTextureContainer">
+			</div>
+			<div id="frontTextureContainer">
+			</div>
+		</div>
+		<div id="audioInput">
+			<p>Test video: Replace the video with your own</p>
+			<input id="videoSelector" type="file" accept="video/*"/>
+			<br>
+			<video id="player" src="./assets/video.mp4" type="video/mp4" width="320" height="240" loop controls autoplay playsinline>
+				<source src="./assets/video.mp4" type="video/mp4">
+			</video>
+			<br>
+		</div>
+		<div id="feedback">
+			<p id="debugOutput"></p>
+		</div>
+	</div>
+</body>
+</html>

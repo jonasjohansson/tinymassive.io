@@ -1,18 +1,14 @@
-(function(global){
-
+(function(global) {
     /*
 
 
     */
 
-    var TempoSource = function() {
-
-    };
+    var TempoSource = function() {};
 
     var p = TempoSource.prototype;
 
     p.init = function(defaultTempo, tempoChangeCallback) {
-
         this.value = 0;
         this.lastBeatTime = Date.now();
 
@@ -27,11 +23,7 @@
         this.beatInterval = 1000 / (this.tempo / 60);
         this.setTempo(defaultTempo);
 
-
-
-
         setInterval(this.update.bind(this), 10);
-
     };
 
     p.setTempo = function(newTempo) {
@@ -39,10 +31,9 @@
         this.beatInterval = 1000 / (this.tempo / 60);
 
         if (this.tempoChangeCallback) this.tempoChangeCallback.call(this);
-    }
+    };
 
     p.tap = function() {
-
         var timeNow = Date.now();
         var interval = timeNow - this.lastTapTime;
 
@@ -50,12 +41,9 @@
         this.setTempo(newTempo);
 
         this.lastTapTime = timeNow;
-
     };
 
-
     p.update = function() {
-
         var timeNow = Date.now();
 
         var interval = timeNow - this.lastBeatTime;
@@ -66,10 +54,7 @@
         } else {
             this.value *= 0.9;
         }
-
     };
 
-
     global.TempoSource = (global.module || {}).exports = TempoSource;
-
 })(this);

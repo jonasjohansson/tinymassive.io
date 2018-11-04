@@ -1,7 +1,5 @@
-(function(global){
-
-    var HarpaCanvasFixtureView = function() {
-    };
+(function(global) {
+    var HarpaCanvasFixtureView = function() {};
 
     var p = HarpaCanvasFixtureView.prototype;
 
@@ -9,7 +7,7 @@
         this.width = width;
         this.height = width;
 
-        this.element = this.canvas = document.createElement("canvas");
+        this.element = this.canvas = document.createElement('canvas');
         this.context = this.canvas.getContext('2d');
 
         this.fixtureWidth = 20;
@@ -20,12 +18,11 @@
         }
     };
 
-    p.disableFixture = function(x,y) {
+    p.disableFixture = function(x, y) {
         this.fixtureEnabledStates[y * this.width + x] = false;
-
     };
 
-    var rgbToString = function (r, g, b) {
+    var rgbToString = function(r, g, b) {
         return 'rgb(' + r.toFixed(0) + ',' + g.toFixed(0) + ',' + b.toFixed(0) + ')';
     };
 
@@ -35,7 +32,7 @@
         // get image data
         var canvasWidth = aContext.canvas.width;
         var canvasHeight = aContext.canvas.height;
-        var imgData = aContext.getImageData(0,0,canvasWidth, canvasHeight).data;
+        var imgData = aContext.getImageData(0, 0, canvasWidth, canvasHeight).data;
 
         //draw fixtures
 
@@ -50,32 +47,32 @@
         var FIXTURE_HEIGHT = 10;
         var FIXTURE_SLANT_OFFSET = -1;
         var FIXTURE_ROW_SLANT_OFFSET = 1;
-        var r,g,b;
+        var r, g, b;
         for (var y = 0; y < canvasHeight; ++y) {
             for (var x = 0; x < canvasWidth; ++x) {
                 var i = (y * canvasWidth + x) * 4; //base index into image data array
 
                 if (this.fixtureEnabledStates[y * canvasWidth + x]) {
-                    r = imgData[i] * imgData[i+3]/255;
-                    g = imgData[i+1] * imgData[i+3]/255;
-                    b = imgData[i+2] * imgData[i+3]/255;
-                    context.strokeStyle = rgbToString(r,g,b);
+                    r = (imgData[i] * imgData[i + 3]) / 255;
+                    g = (imgData[i + 1] * imgData[i + 3]) / 255;
+                    b = (imgData[i + 2] * imgData[i + 3]) / 255;
+                    context.strokeStyle = rgbToString(r, g, b);
 
                     context.beginPath();
                     context.moveTo(FIXTURE_ROW_SLANT_OFFSET * y + x * FIXTURE_WIDTH, y * FIXTURE_HEIGHT);
-                    context.lineTo(FIXTURE_ROW_SLANT_OFFSET * y + x * FIXTURE_WIDTH + FIXTURE_SLANT_OFFSET, y * FIXTURE_HEIGHT + FIXTURE_HEIGHT * 0.8);
+                    context.lineTo(
+                        FIXTURE_ROW_SLANT_OFFSET * y + x * FIXTURE_WIDTH + FIXTURE_SLANT_OFFSET,
+                        y * FIXTURE_HEIGHT + FIXTURE_HEIGHT * 0.8
+                    );
                     context.stroke();
                 }
             }
         }
-
     };
 
-    p.setPixel = function(r,g,b,x,y) {
-        this.fixtures[x][y].style.fill = "rgb(" + r + "," + g + "," + b + ")";
+    p.setPixel = function(r, g, b, x, y) {
+        this.fixtures[x][y].style.fill = 'rgb(' + r + ',' + g + ',' + b + ')';
     };
-
 
     global.HarpaCanvasFixtureView = (global.module || {}).exports = HarpaCanvasFixtureView;
-
 })(this);
