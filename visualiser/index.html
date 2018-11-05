@@ -3,14 +3,24 @@
 <head>
 	<title>Visualiser</title>
 	<meta charset="utf-8">
-	<script src="./assets/js/HarpaVisualiserBase.js"></script>
-	<script src="./assets/js/HarpaSVGFixtureView.js"></script>
-	<script src="./assets/js/HarpaCanvasFixtureView.js"></script>
-	<script src="./assets/js/visualisers/HarpaVideoVisualiser.js"></script>
-	<script src="./assets/js/App.js"></script>
+	<script src="./js/HarpaVisualiserBase.js"></script>
+	<script src="./js/HarpaSVGFixtureView.js"></script>
+	<script src="./js/HarpaCanvasFixtureView.js"></script>
+	<script src="./js/visualisers/HarpaVideoVisualiser.js"></script>
+	<script src="./js/App.js"></script>
 	<link rel="stylesheet" href="https://jonasjohansson.github.io/template/template-raw.css">
 	<link rel="stylesheet" href="../assets/style.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<style>
+		section > div {
+		    width: 50%;
+		    float: left;
+		}
+		canvas {
+		    display: block;
+		    width: 100%;
+		    image-rendering: pixelated;
+		}
+	</style>
 </head>
 <body>
 	<header>
