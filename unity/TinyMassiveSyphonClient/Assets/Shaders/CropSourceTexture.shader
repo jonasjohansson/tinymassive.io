@@ -1,10 +1,8 @@
-﻿Shader "Unlit/HarpaLightFixture"
+﻿Shader "Unlit/CropSourceTexture"
 {
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
-		_PixelX ("PixelX", float) = 0
-		_PixelY ("PixelY", float) = 0
 	}
 	SubShader
 	{
@@ -16,6 +14,7 @@
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
+			
 			
 			#include "UnityCG.cginc"
 
@@ -33,8 +32,18 @@
 
 			sampler2D _MainTex;
 			float4 _MainTex_ST;
-			float _PixelX;
-			float _PixelY;
+
+			int sourceTexSizeWidth;
+			int sourceTexSizeHeight;
+			int destTexSizeWidth;
+			int destTexSizeHeight;
+			
+			float nSourceTexX;
+			float nSourceTexY;
+			float nSourceTexWidth;
+			float nSourceTexHeight;
+
+			
 			
 			v2f vert (appdata v)
 			{
@@ -46,13 +55,12 @@
 			
 			fixed4 frag (v2f i) : SV_Target
 			{
-				// sample the texture
-				float normX = ((_PixelX+0.5) / 77.0);
-				float normY = ((_PixelY+0.5) / 13.0);
-				fixed4 col = tex2D(_MainTex, fixed2(normX, 1.0-normY));
-				return col;
-				
-				// return tex2D(_MainTex, i.uv);
+				float2 lookup;
+				lookup.x =  (i.uv.x - nSourceTexX) / nSourceTexWidth;
+				lookup.y =  (i.uv.y - nSourceTexY) / nSourceTexHeight;
+				// lookup.x =  (i.uv.x) / nSourceTexWidth;
+				// lookup.y =  (i.uv.y) / nSourceTexHeight;
+				return tex2D(_MainTex, lookup);
 			}
 			ENDCG
 		}
