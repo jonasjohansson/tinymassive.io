@@ -18,8 +18,6 @@ In detail, from your app's perspective:
 76,12 is actually unmapped (because the light there doesn't exist)
 76,10 is the bottom-right light on the second-to-last row (E1/S1/U1/13 on overview cableing facade south large-b.pdf document)
 
-
-
 #######
 
 Owen @ TinyMassive
