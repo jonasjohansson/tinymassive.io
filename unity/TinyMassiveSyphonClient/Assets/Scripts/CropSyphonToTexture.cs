@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Events;
 using TMPro;
+using Klak;
 
 [ExecuteInEditMode]
 public class CropSyphonToTexture : MonoBehaviour {
@@ -16,28 +17,27 @@ public class CropSyphonToTexture : MonoBehaviour {
 	public RenderTexture sourceTexture;
 	public RenderTexture targetTexture;
 
+	public UnityEngine.UI.Toggle scaleCroppedPreview;
+
 	public int Width = 77;
 	public int Height = 13;
 
 	public int yOffset = 0;
 
-	private Material material;
-	public Shader cropShader;
-
+	public Material croppedOutputMaterial;
+	public Klak.Syphon.SyphonClient syphonClient;
+	
 	// Use this for initialization
-	void Start () {
-		material = new Material(cropShader);
-
+	IEnumerator Start () {
+		
+		yield return new WaitForSeconds(1.0f);
 		UpdateSettings();
 	}
 	
 	void LateUpdate () {
 
-		material.SetInt("_Width", Width);
-		material.SetInt("_Height", Height);
-		material.SetInt("_YOffset", yOffset);
+		Graphics.CopyTexture(sourceTexture, 0, 0, 0, sourceTexture.height - (Height + yOffset), Width, Height, targetTexture, 0, 0, 0, targetTexture.height-Height);
 
-		Graphics.Blit(sourceTexture, targetTexture, material);
 	}
 
 	public void UpdateSettings(){
@@ -47,11 +47,21 @@ public class CropSyphonToTexture : MonoBehaviour {
 
 		yOffset = int.Parse(yOffsetInput.text);
 
-		Width = Mathf.Min(1, Width);
-		Height = Mathf.Min(1, Height);
-		yOffset = Mathf.Min(Height, yOffset);
+		Width = Mathf.Min(Mathf.Min(targetTexture.width, sourceTexture.width), Width);
+		Height = Mathf.Min(Mathf.Min(targetTexture.height, sourceTexture.height), Height);
+		yOffset = Mathf.Max(0, Mathf.Min(Mathf.Min(targetTexture.height, sourceTexture.height), yOffset));
 
+		if (scaleCroppedPreview.isOn){
+			float scalePropX = (float)Width / (float)targetTexture.width;
+			float scalePropY = (float)Height / (float)targetTexture.height;
+			croppedOutputMaterial.SetTextureScale("_MainTex", new Vector2(scalePropX, scalePropY));
+			croppedOutputMaterial.SetTextureOffset("_MainTex", new Vector2(0.0f, 1.0f - scalePropY));
+		} else {
+			croppedOutputMaterial.SetTextureScale("_MainTex", Vector2.one);
+			croppedOutputMaterial.SetTextureOffset("_MainTex", Vector2.zero);
+		}
 
+		syphonClient.appName = appNameInput.text;
 
 	}
 }
