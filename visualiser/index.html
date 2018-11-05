@@ -13,35 +13,38 @@
 	<link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-	<div id="container">
+	<header>
 		<h1>Visualiser</h1>
-		<div id="canvasContainer">
+	</header>
+	<hr>
+	<main>
+		<section id="canvasContainer">
 			<div class="visualiserContainer" id="sideContainer">
 				<h2>Side Facade</h2>
 			</div>
 			<div class="visualiserContainer" id="frontContainer">
 				<h2>Front Facade</h2>
 			</div>
-		</div>
-		<h2>Textures</h2>
-		<div id="textureContainer">
+			<br style="clear:both;">
+		</section>
+		<hr>
+		<section id="textureContainer">
+			<h2>Textures</h2>
 			<div id="sideTextureContainer">
 			</div>
 			<div id="frontTextureContainer">
 			</div>
-		</div>
-		<div id="audioInput">
-			<p>Test video: Replace the video with your own</p>
+			<br style="clear:both;">
+		</section>
+		<hr>
+		<section id="audioInput">
+			<h2>Video file</h2>
 			<input id="videoSelector" type="file" accept="video/*"/>
-			<br>
+			<br><br>
 			<video id="player" src="./assets/video.mp4" type="video/mp4" width="320" height="240" loop controls muted autoplay playsinline>
 				<source src="./assets/video.mp4" type="video/mp4">
 			</video>
-			<br>
-		</div>
-		<div id="feedback">
-			<p id="debugOutput"></p>
-		</div>
-	</div>
+		</section>
+	</main>
 </body>
 </html>
