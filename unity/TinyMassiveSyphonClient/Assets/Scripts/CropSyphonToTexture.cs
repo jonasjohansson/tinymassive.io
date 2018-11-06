@@ -19,8 +19,10 @@ public class CropSyphonToTexture : MonoBehaviour {
 
 	public UnityEngine.UI.Toggle scaleCroppedPreview;
 
-	public int Width = 77;
-	public int Height = 13;
+	[Range(0.0f, 1.0f)]
+	public float Width = 1.0f;
+	[Range(0.0f, 1.0f)]
+	public float Height = 1.0f;
 
 	[Range(0,1024)]
 	public int yOffset = 0;
@@ -32,9 +34,6 @@ public class CropSyphonToTexture : MonoBehaviour {
 	public float debugNSourceTexX = 0.0f;
 	public float debugNSourceTexY = 0.0f;
 
-	public float debugNSourceTexWidth = 0.0f;
-	public float debugNSourceTexHeight = 0.0f;
-
 	
 	// Use this for initialization
 	IEnumerator Start () {
@@ -45,20 +44,13 @@ public class CropSyphonToTexture : MonoBehaviour {
 	
 	void LateUpdate () {
 
-		croppedOutputMaterial.SetInt("sourceTexSizeWidth", sourceTexture.width);
-		croppedOutputMaterial.SetInt("sourceTexSizeHeight", sourceTexture.height);
-
-		croppedOutputMaterial.SetInt("destTexSizeWidth", targetTexture.width);
-		croppedOutputMaterial.SetInt("destTexSizeHeight", targetTexture.height);
-
 		croppedOutputMaterial.SetFloat("nSourceTexX", 0.0f);
 		debugNSourceTexY = ((float)yOffset / sourceTexture.height);
 		croppedOutputMaterial.SetFloat("nSourceTexY", debugNSourceTexY);
 
-		debugNSourceTexWidth = (float)Width / sourceTexture.width;
-		croppedOutputMaterial.SetFloat("nSourceTexWidth", debugNSourceTexWidth);
-		debugNSourceTexHeight = (float)Height / sourceTexture.height;
-		croppedOutputMaterial.SetFloat("nSourceTexHeight", debugNSourceTexHeight);
+		
+		croppedOutputMaterial.SetFloat("nSourceTexWidth", Width);
+		croppedOutputMaterial.SetFloat("nSourceTexHeight", Height);
 
 
 		Graphics.Blit(sourceTexture, targetTexture, croppedOutputMaterial);
@@ -70,13 +62,10 @@ public class CropSyphonToTexture : MonoBehaviour {
 
 		Debug.Log("updating settings");
 
-		Width = int.Parse(captureWidthInput.text);
-		Height = int.Parse(captureHeightInput.text);
+		Width = Mathf.Clamp01(float.Parse(captureHeightInput.text));
+		Height = Mathf.Clamp01(float.Parse(captureHeightInput.text));
 
 		yOffset = int.Parse(yOffsetInput.text);
-
-		Width = Mathf.Min(sourceTexture.width, Width);
-		Height = Mathf.Min(sourceTexture.height, Height);
 		yOffset = Mathf.Max(0, Mathf.Min(sourceTexture.height, yOffset));
 
 		// if (scaleCroppedPreview.isOn){

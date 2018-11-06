@@ -32,11 +32,6 @@
 
 			sampler2D _MainTex;
 			float4 _MainTex_ST;
-
-			int sourceTexSizeWidth;
-			int sourceTexSizeHeight;
-			int destTexSizeWidth;
-			int destTexSizeHeight;
 			
 			float nSourceTexX;
 			float nSourceTexY;
