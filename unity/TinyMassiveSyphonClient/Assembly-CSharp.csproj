@@ -57,6 +57,8 @@
      <Compile Include="Assets\Scripts\CropSyphonToTexture.cs" />
      <Compile Include="Assets\Scripts\ForceWindowed.cs" />
      <Compile Include="Assets\Scripts\HarpaLampFixture.cs" />
+     <Compile Include="Assets\Scripts\TestMissile.cs" />
+     <Compile Include="Assets\Scripts\TestSceneControls.cs" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>CFBundleDisplayName</key>
+		<string></string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleTypeExtensions</key>
+		<array>
+			<string>s6</string>
+		</array>
+		<key>CFBundleTypeIconFile</key>
+		<string>icon</string>
+		<key>CFBundleTypeName</key>
+		<string>Syphoner Doc</string>
+		<key>CFBundleTypeRole</key>
+		<string>Editor</string>
+		<key>CFBundleVersion</key>
+		<string></string>
+		<key>LSApplicationCategoryType</key>
+		<string></string>
+		<key>LSHandlerRank</key>
+		<string>Owner</string>
+		<key>NSDocumentClass</key>
+		<string>NSApplication</string>
+	</dict>
+</array>
+</plist>
