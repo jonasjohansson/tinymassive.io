@@ -181,6 +181,30 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 21679257}
+--- !u!21 &91365504
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Unlit/CropSourceTexture
+  m_Shader: {fileID: 4800000, guid: e20818dc35ee24ec8a903b3aece504dd, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &95812931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4799,30 +4823,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1333823658
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Unlit/CropSourceTexture
-  m_Shader: {fileID: 4800000, guid: e20818dc35ee24ec8a903b3aece504dd, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &1388165101
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,7 +5289,7 @@ MonoBehaviour:
   Width: 1
   Height: 1
   yOffset: 0
-  croppedOutputMaterial: {fileID: 1333823658}
+  croppedOutputMaterial: {fileID: 91365504}
   cropShader: {fileID: 4800000, guid: e20818dc35ee24ec8a903b3aece504dd, type: 3}
   syphonClient: {fileID: 926255487}
   debugNSourceTexX: 0
@@ -6238,7 +6238,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -6314,6 +6314,7 @@ GameObject:
   - component: {fileID: 1845889333}
   - component: {fileID: 1845889332}
   - component: {fileID: 1845889330}
+  - component: {fileID: 1845889331}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6328,6 +6329,19 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1845889329}
   m_Enabled: 1
+--- !u!114 &1845889331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845889329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a68c470482f3432cbe1d2d1ff628fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 2048
+  height: 1024
 --- !u!20 &1845889332
 Camera:
   m_ObjectHideFlags: 0
@@ -6869,7 +6883,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
@@ -7070,7 +7084,7 @@ MonoBehaviour:
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
   m_isInputParsingRequired: 0
-  m_inputSource: 3
+  m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
   - {fileID: 0}
