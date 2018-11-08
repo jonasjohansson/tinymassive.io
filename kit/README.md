@@ -2,6 +2,8 @@
 
 This folder contains documents and templates for different types of software. Join our Slack for questions and creative feedback.
 
+[TMVisualiser](../visualiser/)
+
 [TMSyphonVisualiser](TMSyphonVisualiser)
 
 [TMTestAppInteractive](TMTestAppInteractive)
@@ -34,6 +36,18 @@ Once you are done with Working on the creative side, you can output your work fr
 ![](AfterEffects/HarpaTemplateGuide-4.jpg)
 
 I recommend that you duplicate the render settings for each output. And voila!
+
+## Controls
+
+The controls will be 2 joysticks and 4 arcade buttons and are yours to use in whichever way you deem fit. We will take care of transmitting control messages to your application.
+
+![](ControllerDiagram.png)
+
+W, A, S, D (joystick 1 up/left/down/right)
+I, J, K, L (joystick 2 up/left/down/right)
+Q, E (2 generic buttons mounted next to joystick 1 )
+U, O (2 generic buttons mounted next to joystick 2 )
+0 (Important: this button (numpad 0) should reset the game state.)
 
 ## Tips and Tricks
 
