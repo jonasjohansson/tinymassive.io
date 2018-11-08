@@ -1,14 +1,18 @@
 # Creators Kit
 
-This folder contains documents and templates for different types of software. Join our Slack for questions and creative feedback.
-
-[TMVisualiser](../visualiser/)
+This folder contains documents and templates for different types of software. <a href="https://join.slack.com/t/tiny-massive/shared_invite/enQtNDY1MjQwMjY4NzY4LTlhZDgxZTJmZDIxOTQ0MDY5Y2I1MWQ0MDYyMjEyMmVlNGFiNDNhMTlmMmEyNzEwMTI3YWRjNzJhMzkzZGIzNjk">Join our Slack</a> for questions and creative feedback.
 
 [TMSyphonVisualiser](TMSyphonVisualiser)
 
 [TMTestAppInteractive](TMTestAppInteractive)
 
 [Syphoner](http://www.sigmasix.ch/syphoner/)
+
+## Video Visualiser
+
+[Visualiser](../visualiser/)
+
+Upload your video and get an understanding of what it would look like on the building!
 
 ## TouchDesigner
 
