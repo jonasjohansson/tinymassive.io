@@ -1,3 +1,5 @@
+# Creators Kit
+
 These documents are provided for the super curious + detail oriented, they are intended mainly to show exactly how the lights are laid out on the buildings.
 
 PAY NO ATTENTION TO THE CODES ON THE DIAGRAMS - they are for us to worry about, and some of them are wrong anyway.
@@ -18,6 +20,23 @@ In detail, from your app's perspective:
 76,12 is actually unmapped (because the light there doesn't exist)
 76,10 is the bottom-right light on the second-to-last row (E1/S1/U1/13 on overview cableing facade south large-b.pdf document)
 
-#######
+## Templates
 
-Owen @ TinyMassive
+[TMSyphonVisualiser](TMSyphonVisualiser)
+[TMTestAppInteractive](TMTestAppInteractive)
+[Syphoner](http://www.sigmasix.ch/syphoner/)
+
+### After Effects
+
+[AfterEffectsHarpaTemplate](AfterEffects/HarpaTemplate.aep)
+
+This project is made on After Effects CC 2017 There are two types of compositions in this project:
+WORKING compositions and OUTPUT Compositions
+The pixel space of the Working Compositions is 16 times larger than the actual Output.
+This allows you to work on a reasonable size (Not too small)
+
+![alt text](AfterEffects/HarpaTemplateStill.jpg 'Logo Title Text 1')
+
+### TouchDesigner
+
+[TouchDesignerHarpaTemplate](TouchDesigner/HarpaTemplate.toe)
