@@ -20,23 +20,50 @@ In detail, from your app's perspective:
 76,12 is actually unmapped (because the light there doesn't exist)
 76,10 is the bottom-right light on the second-to-last row (E1/S1/U1/13 on overview cableing facade south large-b.pdf document)
 
+## Tips and Tricks
+
+-Better keep it bold and simple. Detailed visuals might lose against pixel art for example. -The video content on a building this big might appear faster, be modest with the speed. -Negative space is the key, the more black and contrast, the better the look
+-Using audio to animate will help compensate the lack of pixels. Beat the beat.
+
 ## Templates
 
 [TMSyphonVisualiser](TMSyphonVisualiser)
+
 [TMTestAppInteractive](TMTestAppInteractive)
+
 [Syphoner](http://www.sigmasix.ch/syphoner/)
+
+### TouchDesigner
+
+[TouchDesignerHarpaTemplate](TouchDesigner/HarpaTemplate.toe)
 
 ### After Effects
 
 [AfterEffectsHarpaTemplate](AfterEffects/HarpaTemplate.aep)
 
-This project is made on After Effects CC 2017 There are two types of compositions in this project:
-WORKING compositions and OUTPUT Compositions
-The pixel space of the Working Compositions is 16 times larger than the actual Output.
-This allows you to work on a reasonable size (Not too small)
+This project is made on After Effects CC 2017 and comes with two types of compositions; WORKING and OUTPUT. The pixel space of the Working compositions is 16x larger than the actual output. This allows you to create on a reasonable size.
 
-![alt text](AfterEffects/HarpaTemplateStill.jpg 'Logo Title Text 1')
+![](AfterEffects/HarpaTemplateGuide-1.jpg)
 
-### TouchDesigner
+#### Getting started
 
-[TouchDesignerHarpaTemplate](TouchDesigner/HarpaTemplate.toe)
+The main working compositionm, and recommended starting point, is named WORKHERE_BothSides_16X. Though if needed, you can use the Left and Right compositions; WORKHERE_LeftSide_16X
+WORKHERE_RightSide_16X.
+
+What you see in the WORKING COMP
+![](AfterEffects/HarpaTemplateGuide-2.jpg)
+
+What you see in the OUTPUT COMP
+![](AfterEffects/HarpaTemplateGuide-3.jpg)
+
+Once you are done with Working on the creative side, you can output your work from two options:
+
+1- Harpa2018_template_OUTPUT_Visualizer
+This render can be used for the online Visualizer
+
+2- Harpa2018_template_OUTPUT_System
+This is the render for the system, your delivery format
+
+![](AfterEffects/HarpaTemplateGuide-4.jpg)
+
+I recommend that you duplicate the render settings for each output. And voila!
