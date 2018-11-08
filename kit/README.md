@@ -20,7 +20,7 @@ Upload your video and get an understanding of what it would look like on the bui
 
 ## After Effects
 
-[AfterEffectsHarpaTemplate](AfterEffects/HarpaTemplate.aep)
+[AfterEffectsHarpaTemplate](AfterEffects/HarpaTemplate.zip)
 
 This project is made on After Effects CC 2017 and comes with two types of compositions; WORKING and OUTPUT. The pixel space of the Working compositions is 16x larger than the actual output. This allows you to create on a reasonable size.
 
