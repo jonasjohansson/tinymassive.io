@@ -47,11 +47,13 @@ The controls will be 2 joysticks and 4 arcade buttons and are yours to use in wh
 
 ![](ControllerDiagram.png)
 
+```
 W, A, S, D (joystick 1 up/left/down/right)
 I, J, K, L (joystick 2 up/left/down/right)
 Q, E (2 generic buttons mounted next to joystick 1 )
 U, O (2 generic buttons mounted next to joystick 2 )
 0 (Important: this button (numpad 0) should reset the game state.)
+```
 
 ## Tips and Tricks
 
