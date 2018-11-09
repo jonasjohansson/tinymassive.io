@@ -53,7 +53,7 @@ I recommend that you duplicate the render settings for each output. And voila!
 
 The controls will be 2 joysticks and 4 arcade buttons and are yours to use in whichever way you deem fit. We will take care of transmitting control messages to your application.
 
-![](ControllerDiagram.png)
+![](ControllerDiagramBlack.png)
 
 ```
 W, A, S, D (joystick 1 up/left/down/right)
