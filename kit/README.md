@@ -12,7 +12,7 @@ Upload your video and get an understanding of what it would look like on the bui
 
 Instructional video coming soon, meanwhile check out our Slack.
 
-[TMApps (SyphonVisualiser + TestAppInteractive (Unity))](TMApps.zip)
+[TMApps (For Mac, SyphonVisualiser + TestAppInteractive)](TMApps.zip)
 
 [Syphoner](http://www.sigmasix.ch/syphoner/)
 
