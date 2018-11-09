@@ -37,4 +37,6 @@ button {
 	text-transform: uppercase;
 	font-weight: bold;
 	border-radius: 4px;
+	background-color: white;
+	color: black;
 }
