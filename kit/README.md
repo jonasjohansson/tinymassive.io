@@ -10,22 +10,21 @@ Upload your video and get an understanding of what it would look like on the bui
 
 ## Unity
 
-We have two templates - one simple, one 'advanced'. 
+We have two templates: Simple and Advanced. The simple is great if you've worked with Unity a bit but isn't using it on a daily basis. Advanced has a built-in visualiser of the building, but requires a bit more knowledge. Both comes with tutorials!
 
-### Simple Template
+**Simple**
 
-Template & visualiser (Visualiser is OSX only)
-[TM Simple Template (For Mac, SyphonVisualiser + TestAppInteractive)](TMApps.zip)
+[TM Simple Template + Visualiser (Mac only)](TMApps.zip)
+
 [Syphoner](http://www.sigmasix.ch/syphoner/)
 
-Tutorial video: [Link](https://www.youtube.com/watch?v=A3irySxcXY4)
+[Tutorial](https://www.youtube.com/watch?v=A3irySxcXY4)
 
-### Advanced Template (contains 3d Harpa visualiser, but requires a little bit more Unity knowledge)
+**Advanced**
 
 [TM Advanced Template (Mac & Windows)](TMAdvTemplate.zip)
 
-Tutorial documentation: [Link](https://docs.google.com/document/d/14lVTT5Eh0mVbZN7ukxQ_8zATk2JOuJBczsSjYwUdkrs)
-
+[Tutorial](https://docs.google.com/document/d/14lVTT5Eh0mVbZN7ukxQ_8zATk2JOuJBczsSjYwUdkrs)
 
 ## TouchDesigner
 
