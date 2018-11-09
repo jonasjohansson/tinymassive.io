@@ -10,11 +10,22 @@ Upload your video and get an understanding of what it would look like on the bui
 
 ## Unity
 
-Instructional video coming soon, meanwhile check out our Slack.
+We have two templates - one simple, one 'advanced'. 
 
-[TMApps (For Mac, SyphonVisualiser + TestAppInteractive)](TMApps.zip)
+### Simple Template
 
+Template & visualiser (Visualiser is OSX only)
+[TM Simple Template (For Mac, SyphonVisualiser + TestAppInteractive)](TMApps.zip)
 [Syphoner](http://www.sigmasix.ch/syphoner/)
+
+Tutorial video: [Link](https://www.youtube.com/watch?v=A3irySxcXY4)
+
+### Advanced Template (contains 3d Harpa visualiser, but requires a little bit more Unity knowledge)
+
+[TM Advanced Template (Mac & Windows)](TMAdvTemplate.zip)
+
+Tutorial documentation: [Link](https://docs.google.com/document/d/14lVTT5Eh0mVbZN7ukxQ_8zATk2JOuJBczsSjYwUdkrs)
+
 
 ## TouchDesigner
 
