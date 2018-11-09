@@ -12,13 +12,13 @@ Upload your video and get an understanding of what it would look like on the bui
 
 We have two templates: Simple and Advanced. The simple is great if you've worked with Unity a bit but isn't using it on a daily basis. Advanced has a built-in visualiser of the building, but requires a bit more knowledge. Both comes with tutorials!
 
-**Simple** [Tutorial](https://www.youtube.com/watch?v=A3irySxcXY4)
+**Simple** ([tutorial](https://www.youtube.com/watch?v=A3irySxcXY4))
 
 [TM Simple Template + Visualiser (Mac only)](TMApps.zip)
 
 [Syphoner](http://www.sigmasix.ch/syphoner/)
 
-**Advanced** [Tutorial](https://docs.google.com/document/d/14lVTT5Eh0mVbZN7ukxQ_8zATk2JOuJBczsSjYwUdkrs)
+**Advanced** ([tutorial](https://docs.google.com/document/d/14lVTT5Eh0mVbZN7ukxQ_8zATk2JOuJBczsSjYwUdkrs))
 
 [TM Advanced Template (Mac & Windows)](TMAdvTemplate.zip)
 
