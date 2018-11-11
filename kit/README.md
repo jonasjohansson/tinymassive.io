@@ -2,19 +2,15 @@
 
 This kit contains documents and templates for different types of software. <a href="https://join.slack.com/t/tiny-massive/shared_invite/enQtNDY1MjQwMjY4NzY4LTlhZDgxZTJmZDIxOTQ0MDY5Y2I1MWQ0MDYyMjEyMmVlNGFiNDNhMTlmMmEyNzEwMTI3YWRjNzJhMzkzZGIzNjk">Join our Slack</a> for questions and creative feedback.
 
+We don't offer templates for PDE or JS-files but as long as they can run on Mac and in Chrome (if Javascript) you're good.
+
 ## Video Visualiser
 
 [Visualiser](../visualiser/)
 
 Upload your video and get an understanding of what it would look like on the building!
 
-## Templates
-
-### Processing / Javascript
-
-We don't offer templates for PDE or JS-files but as long as they can run on Mac and in Chrome (if Javascript) you're good.
-
-### Unity
+## Unity
 
 We have two templates: Simple and Advanced. The simple is great if you've worked with Unity a bit but isn't using it on a daily basis. Advanced has a built-in visualiser of the building, but requires a bit more knowledge. Both comes with tutorials!
 
@@ -28,11 +24,11 @@ We have two templates: Simple and Advanced. The simple is great if you've worked
 
 [TM Advanced Template (Mac & Windows)](TMAdvTemplate.zip)
 
-### TouchDesigner
+## TouchDesigner
 
 [TouchDesignerHarpaTemplate](TouchDesigner/HarpaTemplate.toe)
 
-### After Effects
+## After Effects
 
 [AfterEffectsHarpaTemplate](AfterEffects/HarpaTemplate.zip)
 
