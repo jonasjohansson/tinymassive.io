@@ -8,7 +8,13 @@ This kit contains documents and templates for different types of software. <a hr
 
 Upload your video and get an understanding of what it would look like on the building!
 
-## Unity
+## Templates
+
+### Processing / Javascript
+
+We don't offer templates for PDE or JS-files but as long as they can run on Mac and in Chrome (if Javascript) you're good.
+
+### Unity
 
 We have two templates: Simple and Advanced. The simple is great if you've worked with Unity a bit but isn't using it on a daily basis. Advanced has a built-in visualiser of the building, but requires a bit more knowledge. Both comes with tutorials!
 
@@ -22,11 +28,11 @@ We have two templates: Simple and Advanced. The simple is great if you've worked
 
 [TM Advanced Template (Mac & Windows)](TMAdvTemplate.zip)
 
-## TouchDesigner
+### TouchDesigner
 
 [TouchDesignerHarpaTemplate](TouchDesigner/HarpaTemplate.toe)
 
-## After Effects
+### After Effects
 
 [AfterEffectsHarpaTemplate](AfterEffects/HarpaTemplate.zip)
 
