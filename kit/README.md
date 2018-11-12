@@ -53,7 +53,7 @@ I recommend that you duplicate the render settings for each output. And voila!
 
 ## Controls
 
-The controls will be 2 joysticks and 4 arcade buttons and are yours to use in whichever way you deem fit. We will take care of transmitting control messages to your application.
+We will provide visitors with an arcade like control setup with 2 joysticks and 4 arcade buttons. These will be mapped like keyboard inputs, so if you want to include any of these controls into your project please refer to the diagram below. Remember that you can choose to not use these at all, or just use a few, up to you!
 
 ![](ControllerDiagramBlack.png)
 
