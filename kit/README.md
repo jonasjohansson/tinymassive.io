@@ -2,31 +2,17 @@
 
 This kit contains documents and templates for different types of software. <a href="https://join.slack.com/t/tiny-massive/shared_invite/enQtNDY1MjQwMjY4NzY4LTlhZDgxZTJmZDIxOTQ0MDY5Y2I1MWQ0MDYyMjEyMmVlNGFiNDNhMTlmMmEyNzEwMTI3YWRjNzJhMzkzZGIzNjk">Join our Slack</a> for questions and creative feedback.
 
-We don't offer templates for PDE or JS-files but as long as they can run on Mac and in Chrome (if Javascript) you're good.
-
 ## Video Visualiser
 
 [Visualiser](../visualiser/)
 
 Upload your video and get an understanding of what it would look like on the building!
 
-## Controls
+## Processing
 
-We will provide visitors with an arcade like control setup with 2 joysticks and 4 arcade buttons. These will be mapped like keyboard inputs, so if you want to include any of these controls into your project please refer to the diagram below. Remember that you can choose to not use these at all, or just use a few, up to you!
-
-![](ControllerDiagramBlack.png)
-
-```
-W, A, S, D (joystick 1 up/left/down/right)
-I, J, K, L (joystick 2 up/left/down/right)
-Q, E (2 generic buttons mounted next to joystick 1 )
-U, O (2 generic buttons mounted next to joystick 2 )
-0 (Important: this button (numpad 0) should reset the game state.)
-```
+[Processing](https://github.com/regisfrias/tinymassive-pde-template)
 
 ## Unity
-
-We have two templates: Simple and Advanced. The simple is great if you've worked with Unity a bit but isn't using it on a daily basis. Advanced has a built-in visualiser of the building, but requires a bit more knowledge. Both comes with tutorials!
 
 **Simple** ([tutorial](https://www.youtube.com/watch?v=A3irySxcXY4))
 
@@ -64,6 +50,20 @@ Once you are done with Working on the creative side, you can output your work fr
 ![](AfterEffects/HarpaTemplateGuide-4.jpg)
 
 I recommend that you duplicate the render settings for each output. And voila!
+
+## Controls
+
+We will provide visitors with an arcade like control setup with 2 joysticks and 4 arcade buttons. These will be mapped like keyboard inputs, so if you want to include any of these controls into your project please refer to the diagram below. Remember that you can choose to not use these at all, or just use a few, up to you!
+
+![](ControllerDiagramBlack.png)
+
+```
+W, A, S, D (joystick 1 up/left/down/right)
+I, J, K, L (joystick 2 up/left/down/right)
+Q, E (2 generic buttons mounted next to joystick 1 )
+U, O (2 generic buttons mounted next to joystick 2 )
+0 (Important: this button (numpad 0) should reset the game state.)
+```
 
 ## Tips and Tricks
 
