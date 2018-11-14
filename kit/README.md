@@ -67,25 +67,11 @@ U, O (2 generic buttons mounted next to joystick 2 )
 
 ## More…
 
-[HarpaFacade](HarpaFacade.ai)
+[HarpaFacade](HarpaFacade.ai), [HarpaFacadeA](HarpaFacadeA.pdf), [HarpaFacadeB](HarpaFacadeB.pdf), [GluggarVinnuskjal](GluggarVinnuskjal.xlsx)
 
-[HarpaFacadeA](HarpaFacadeA.pdf)
+These documents are provided for the curious and are intended to show exactly how the lights are laid out on the buildings. **Pay no attention to the codes on the diagrams**, they are for us to worry about, and some of them are wrong anyway. **Also note** our 77x13 mapping does miss some small rows, and one or two individual lights at the edges. They will remain black.
 
-[HarpaFacadeB](HarpaFacadeB.pdf)
-
-[GluggarVinnuskjal](GluggarVinnuskjal.xlsx)
-
-These documents are provided for the curious and are intended to show exactly how the lights are laid out on the buildings.
-
-**PAY NO ATTENTION TO THE CODES ON THE DIAGRAMS:** They are for us to worry about, and some of them are wrong anyway.
-
-**ALSO NOTE:**Our 77x13 mapping does miss some small rows, and one or two individual lights at the edges. They will remain black.
-
-It is worth taking note of how the different "pixels" of the facade are arranged relative to each other, i.e. they are not in a regular straight grid.
-
-If in doubt, stick to the 77 x 13 grid.
-
-In detail, from your app's perspective:
+It is worth taking note of how the different "pixels" of the facade are arranged relative to each other, i.e. they are not in a regular straight grid. If in doubt, stick to the 77 x 13 grid. In detail, from your app's perspective:
 
 ```
 0,0 is the top-left light on the small facade
