@@ -2,6 +2,8 @@
 
 This kit contains documents and templates for different types of software. <a href="https://join.slack.com/t/tiny-massive/shared_invite/enQtNDY1MjQwMjY4NzY4LTlhZDgxZTJmZDIxOTQ0MDY5Y2I1MWQ0MDYyMjEyMmVlNGFiNDNhMTlmMmEyNzEwMTI3YWRjNzJhMzkzZGIzNjk">Join our Slack</a> for questions and creative feedback.
 
+[Syphoner](http://www.sigmasix.ch/syphoner/)
+
 ## Video Visualiser
 
 [Visualiser](../visualiser/)
@@ -17,8 +19,6 @@ Upload your video and get an understanding of what it would look like on the bui
 **Simple** ([tutorial](https://www.youtube.com/watch?v=A3irySxcXY4))
 
 [TM Unity Simple Template + Visualiser (Mac only)](TMApps.zip)
-
-[Syphoner](http://www.sigmasix.ch/syphoner/)
 
 **Advanced** ([tutorial](https://docs.google.com/document/d/14lVTT5Eh0mVbZN7ukxQ_8zATk2JOuJBczsSjYwUdkrs))
 
