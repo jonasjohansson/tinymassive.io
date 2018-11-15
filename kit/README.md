@@ -67,17 +67,11 @@ U, O (2 generic buttons mounted next to joystick 2 )
 
 ## More…
 
-[HarpaFacade](HarpaFacade.ai), [HarpaFacadeA](HarpaFacadeA.pdf), [HarpaFacadeB](HarpaFacadeB.pdf), [GluggarVinnuskjal](GluggarVinnuskjal.xlsx)
-
 These documents are provided for the curious and are intended to show exactly how the lights are laid out on the buildings. **Pay no attention to the codes on the diagrams**, they are for us to worry about, and some of them are wrong anyway. **Also note** our 77x13 mapping does miss some small rows, and one or two individual lights at the edges. They will remain black.
 
-In detail, from your app's perspective:
+Mapping Diagram (thanks to Hugo Bastås for taking the initiative on this!)
+![](Harpa-Mapping-Diagram-2019.pdf)
 
-```
-0,0 is the top-left light on the small facade
-37,8 is the right-hand light on the lowest row on the small facade. (E3/S12/U5/46)
-38,0 is unmapped (because the light there doesn't exist)
-38,1 is the top light on the left-most row on the large facade (E2/S10/U4/151)
-76,12 is  unmapped (because the light there doesn't exist)
-76,10 is the bottom-right light on the second-to-last row (E1/S1/U1/13)
-```
+Spreadsheet
+[Google Docs](https://docs.google.com/spreadsheets/d/1-1ouTokmmn5xHEQlZXHVdl2lA44z3ntEZEXTKQj7yvI/edit?usp=sharing)
+[Download](TinyMassive-HarpaLightDMXPatching.pdf)
