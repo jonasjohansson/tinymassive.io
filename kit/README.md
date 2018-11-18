@@ -28,6 +28,9 @@ Upload your video and get an understanding of what it would look like on the bui
 
 [TouchDesignerHarpaTemplate](TouchDesigner/HarpaTemplate.toe)
 
+
+*Please note, for all realtime software, check that your app is likely to run on the hardware listed below*
+
 ## After Effects
 
 [AfterEffectsHarpaTemplate](AfterEffects/HarpaTemplate.zip)
@@ -66,6 +69,12 @@ U, O (2 generic buttons mounted next to joystick 2 )
 ```
 
 ## More…
+
+###Hardware###
+
+Please ensure that if you are delivering a realtime work (Unity app, Processing, TD etc), that it will run on our target hardware:
+`Macbook Pro, OSX 10.12 2.3 GHz Intel Core i7, 16 GB 1600 MHz DDR3, Nvidia GT 750M`
+
 
 These documents are provided for the curious and are intended to show exactly how the lights are laid out on the buildings. **Pay no attention to the codes on the diagrams**, they are for us to worry about, and some of them are wrong anyway. **Also note** our 77x13 mapping does miss some small rows, and one or two individual lights at the edges. They will remain black.
 
