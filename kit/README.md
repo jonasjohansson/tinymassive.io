@@ -28,8 +28,7 @@ Upload your video and get an understanding of what it would look like on the bui
 
 [TouchDesignerHarpaTemplate](TouchDesigner/HarpaTemplate.toe)
 
-
-*Please note, for all realtime software, check that your app is likely to run on the hardware listed below*
+_Please note, for all realtime software, check that your app is likely to run on the hardware listed below_
 
 ## After Effects
 
@@ -70,19 +69,20 @@ U, O (2 generic buttons mounted next to joystick 2 )
 
 ## More…
 
-###Hardware###
-
 Please ensure that if you are delivering a realtime work (Unity app, Processing, TD etc), that it will run on our target hardware:
-`Macbook Pro, OSX 10.12 2.3 GHz Intel Core i7, 16 GB 1600 MHz DDR3, Nvidia GT 750M`
 
+```
+Macbook Pro
+OSX 10.12
+2.3 GHz Intel Core i7
+16 GB 1600 MHz DDR3
+Nvidia GT 750M
+```
 
 These documents are provided for the curious and are intended to show exactly how the lights are laid out on the buildings. **Pay no attention to the codes on the diagrams**, they are for us to worry about, and some of them are wrong anyway. **Also note** our 77x13 mapping does miss some small rows, and one or two individual lights at the edges. They will remain black.
 
-Mapping Diagram (thanks to Hugo Bastås for taking the initiative on this!)
-[Harpa-Mapping-Diagram-2019](Harpa-Mapping-Diagram-2019.pdf)
+[Harpa Mapping Diagram](Harpa-Mapping-Diagram-2019.pdf) (thanks to Hugo Bastås for taking the initiative on this!)
 
-Spreadsheet
+[Harpa Light Spreadsheet](https://docs.google.com/spreadsheets/d/1-1ouTokmmn5xHEQlZXHVdl2lA44z3ntEZEXTKQj7yvI/edit?usp=sharing)
 
-[Google Docs](https://docs.google.com/spreadsheets/d/1-1ouTokmmn5xHEQlZXHVdl2lA44z3ntEZEXTKQj7yvI/edit?usp=sharing)
-
-[Download](TinyMassive-HarpaLightDMXPatching.pdf)
+[Harpa Light DMX Patching](TinyMassive-HarpaLightDMXPatching.pdf)
