@@ -2,17 +2,17 @@
 
 This kit contains documents and templates for different types of software. <a href="https://join.slack.com/t/tiny-massive/shared_invite/enQtNDY1MjQwMjY4NzY4LTlhZDgxZTJmZDIxOTQ0MDY5Y2I1MWQ0MDYyMjEyMmVlNGFiNDNhMTlmMmEyNzEwMTI3YWRjNzJhMzkzZGIzNjk">Join our Slack</a> for questions and creative feedback.
 
-[Video Visualiser](../visualiser/): Add your video and get an understanding of what it would look like on the building!
+[Video Visualiser](../visualiser/) (add your video and see what it would look like on the building)
 
-[Syphoner](http://www.sigmasix.ch/syphoner/): Simple app for sharing frames using Syphon
+[Syphoner](http://www.sigmasix.ch/syphoner/) (simple app for sharing frames using Syphon)
 
-# Getting started
+## Getting started
 
-## Processing
+### Processing
 
 [TM Processing Template](https://github.com/regisfrias/tinymassive-pde-template)
 
-## Unity
+### Unity
 
 **Simple** ([tutorial](https://www.youtube.com/watch?v=A3irySxcXY4))
 
@@ -22,13 +22,13 @@ This kit contains documents and templates for different types of software. <a hr
 
 [TM Unity Advanced Template (Mac & Windows)](TMAdvTemplate.zip)
 
-## TouchDesigner
+### TouchDesigner
 
 [TouchDesignerHarpaTemplate](TouchDesigner/HarpaTemplate.toe)
 
 _Please note, for all realtime software, check that your app is likely to run on the hardware listed below_
 
-## After Effects
+### After Effects
 
 [AfterEffectsHarpaTemplate](AfterEffects/HarpaTemplate.zip)
 
@@ -49,11 +49,9 @@ Once you are done with Working on the creative side, you can output your work fr
 
 ![](AfterEffects/HarpaTemplateGuide-4.jpg)
 
-I recommend that you duplicate the render settings for each output. And voila!
+## More…
 
-# More…
-
-## Controls
+### Controls
 
 We will provide visitors with an arcade like control setup with 2 joysticks and 4 arcade buttons. These will be mapped like keyboard inputs, so if you want to include any of these controls into your project please refer to the diagram below. Remember that you can choose to not use these at all, or just use a few, up to you!
 
@@ -67,7 +65,7 @@ U, O (2 generic buttons mounted next to joystick 2 )
 0 (Important: this button (numpad 0) should reset the game state.)
 ```
 
-## Details
+### Details
 
 Please ensure that if you are delivering a realtime work (Unity app, Processing, TD etc), that it will run on our target hardware:
 
