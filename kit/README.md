@@ -2,13 +2,11 @@
 
 This kit contains documents and templates for different types of software. <a href="https://join.slack.com/t/tiny-massive/shared_invite/enQtNDY1MjQwMjY4NzY4LTlhZDgxZTJmZDIxOTQ0MDY5Y2I1MWQ0MDYyMjEyMmVlNGFiNDNhMTlmMmEyNzEwMTI3YWRjNzJhMzkzZGIzNjk">Join our Slack</a> for questions and creative feedback.
 
-[Syphoner](http://www.sigmasix.ch/syphoner/)
+[Video Visualiser](../visualiser/): Add your video and get an understanding of what it would look like on the building!
 
-## Video Visualiser
+[Syphoner](http://www.sigmasix.ch/syphoner/): Simple app for sharing frames using Syphon
 
-[Visualiser](../visualiser/)
-
-Upload your video and get an understanding of what it would look like on the building!
+# Getting started
 
 ## Processing
 
@@ -53,6 +51,8 @@ Once you are done with Working on the creative side, you can output your work fr
 
 I recommend that you duplicate the render settings for each output. And voila!
 
+# More…
+
 ## Controls
 
 We will provide visitors with an arcade like control setup with 2 joysticks and 4 arcade buttons. These will be mapped like keyboard inputs, so if you want to include any of these controls into your project please refer to the diagram below. Remember that you can choose to not use these at all, or just use a few, up to you!
@@ -67,7 +67,7 @@ U, O (2 generic buttons mounted next to joystick 2 )
 0 (Important: this button (numpad 0) should reset the game state.)
 ```
 
-## More…
+## Details
 
 Please ensure that if you are delivering a realtime work (Unity app, Processing, TD etc), that it will run on our target hardware:
 
