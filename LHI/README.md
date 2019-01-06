@@ -13,7 +13,9 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 ## References
 
 **Architectural intervention**  
-
+[Uniqa 'Twists and turns'](https://www.youtube.com/watch?v=BGNwjO2beFM)  
+[Ars Electronica Rubix Cube](https://vimeo.com/79616059) + [article](https://archpaper.com/2014/01/students-puzzle-facade-project-is-an-architecturally-scaled-game/)  
+[Ars Electronica Play The Facade](https://ars.electronica.art/center/en/play-the-facade/)  
 [PONG at the Philadelphia Cira Centre](https://www.youtube.com/watch?v=hnIK54dCbqI)  
 [Project Blinkenlights](https://www.youtube.com/watch?v=PZRUtKYCpms)  
 [Tel Aviv City Hall](https://www.youtube.com/watch?v=9rj8mYSuR-Y)  
