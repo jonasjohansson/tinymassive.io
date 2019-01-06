@@ -1,14 +1,12 @@
-# TinyMassive x Harpa x Vetrarhatið 2019
+# Tiny/Massive x Harpa
+## Designing small, for massive.
 
 This document will be updated with references, technical information and links as the course progresses.
 
+### Useful numbers
+Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 
 
-## Contacts
-
-Atli Bollason [email](mailto:bollason@gmail.com)
-
-Owen Hindley [email](mailto:owenhindley@hotmail.com)
 
 
 
@@ -23,8 +21,17 @@ Owen Hindley [email](mailto:owenhindley@hotmail.com)
 
 [SFCave](https://www.youtube.com/watch?v=WozidC1-ASs) - The player has to navigate a winding cave filled with obstacles using just one button and precision timing. (Inspiration for flappy bird)
 
+[https://shakethatbutton.com/](https://shakethatbutton.com/) - Website with some good documentation of alternative control schemes for games and interactive arts.
+
 ## Harpa Technical information
 
 [Harpa Mapping Diagram](../kit/Harpa-Mapping-Diagram-2019.pdf) (thanks to Hugo Bastås for taking the initiative on this!)
 
 [Harpa Light Spreadsheet](https://docs.google.com/spreadsheets/d/1-1ouTokmmn5xHEQlZXHVdl2lA44z3ntEZEXTKQj7yvI/edit?usp=sharing)
+
+## Contacts
+
+Atli Bollason [email](mailto:bollason@gmail.com)
+
+Owen Hindley [email](mailto:owenhindley@hotmail.com)
+
