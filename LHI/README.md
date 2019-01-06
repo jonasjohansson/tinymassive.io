@@ -3,7 +3,7 @@
 
 This document will be updated with references, technical information and links as the course progresses.
 
-### Useful numbers
+**Useful numbers**
 Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 
 
@@ -40,7 +40,7 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 [Dynamic Architecture](https://youtu.be/57DMoW-4xBw)  
 
 
-### Previous work on Harpa
+**Previous work on Harpa**
 
 [Harpa Pong 2015](https://vimeo.com/122900808)  
 [Harpa Visualisers 2016](https://youtu.be/m53kuvMLAiY)  
