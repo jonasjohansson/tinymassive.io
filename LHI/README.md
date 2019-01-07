@@ -20,7 +20,7 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 [Project Blinkenlights](https://www.youtube.com/watch?v=PZRUtKYCpms)  
 [Tel Aviv City Hall](https://www.youtube.com/watch?v=9rj8mYSuR-Y)  
 [Sydney Opera House / Universal Everything](https://vimeo.com/128256623)  
-[kinetic buildings](https://www.youtube.com/watch?v=ZDPqrA4-jK0)
+[Kinetic buildings](https://www.youtube.com/watch?v=ivZk6fOtxZ0)
 
 
 **Information display**
