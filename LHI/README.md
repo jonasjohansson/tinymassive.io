@@ -29,7 +29,9 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 
 [Reuters building, Canary Wharf](https://c1.staticflickr.com/6/5255/5478812798_08311fe2e4_b.jpg)  
 
+** Collaborative image making **
 
+[/r/place](https://www.youtube.com/watch?v=XnRCZK3KjUY)  
 
 **Experimental Game Interaction** 
 
