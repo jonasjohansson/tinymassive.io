@@ -19,15 +19,19 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 [PONG at the Philadelphia Cira Centre](https://www.youtube.com/watch?v=hnIK54dCbqI)  
 [Project Blinkenlights](https://www.youtube.com/watch?v=PZRUtKYCpms)  
 [Tel Aviv City Hall](https://www.youtube.com/watch?v=9rj8mYSuR-Y)  
+[Ryoji Ikeda](https://www.youtube.com/watch?v=JfcN9Qhfir4)  
+[Wind Veil](https://www.youtube.com/watch?v=ZDPqrA4-jK0)  
 [Sydney Opera House / Universal Everything](https://vimeo.com/128256623)  
-
+[Kinetic buildings](https://www.youtube.com/watch?v=ivZk6fOtxZ0)  
 
 
 **Information display**
 
 [Reuters building, Canary Wharf](https://c1.staticflickr.com/6/5255/5478812798_08311fe2e4_b.jpg)  
 
+**Collaborative image making**
 
+[/r/place](https://www.youtube.com/watch?v=XnRCZK3KjUY)  
 
 **Experimental Game Interaction** 
 
