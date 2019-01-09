@@ -6,7 +6,10 @@ This document will be updated with references, technical information and links a
 **Useful numbers**
 Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 
-
+**Syphoner download (OSX only**)
+[Syphoner](http://www.sigmasix.ch/syphoner/)
+**Harpa Preview (OSX only)**
+[HarpaSyphonCapture](./assets/HarpaSyphonCapture.app.zip)
 
 
 
