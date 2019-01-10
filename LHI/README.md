@@ -45,8 +45,8 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 
 **Readings**
 
-[Formulary for a New Urbanism](http://www.uncarved.org/turb/articles/formulary.html) 
-[Situationist International Anthology](http://www.bopsecrets.org/SI/index.htm) - Further Situationist readings.
+[Formulary for a New Urbanism](http://www.uncarved.org/turb/articles/formulary.html)  
+[Situationist International Anthology](http://www.bopsecrets.org/SI/index.htm) - Further Situationist readings.  
 
 **Madness**
 
