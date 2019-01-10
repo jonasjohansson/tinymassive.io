@@ -3,8 +3,16 @@
 
 This document will be updated with references, technical information and links as the course progresses.
 
+## Processing
+
+[Processing](https://www.processing.org/)
+
+
+
 **Useful numbers**
 Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
+
+## Syphon Preview
 
 **Syphoner download (OSX only**)
 [Syphoner](http://www.sigmasix.ch/syphoner/)
