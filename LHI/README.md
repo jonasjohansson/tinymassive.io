@@ -22,11 +22,10 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 [PONG at the Philadelphia Cira Centre](https://www.youtube.com/watch?v=hnIK54dCbqI)  
 [Project Blinkenlights](https://www.youtube.com/watch?v=PZRUtKYCpms)  
 [Tel Aviv City Hall](https://www.youtube.com/watch?v=9rj8mYSuR-Y)  
-[Ryoji Ikeda](https://www.youtube.com/watch?v=JfcN9Qhfir4)  
+[Ryoji Ikeda at Times Square](https://www.youtube.com/watch?v=JfcN9Qhfir4)  
 [Wind Veil](https://www.youtube.com/watch?v=ZDPqrA4-jK0)  
 [Sydney Opera House / Universal Everything](https://vimeo.com/128256623)  
 [Kinetic buildings](https://www.youtube.com/watch?v=ivZk6fOtxZ0)  
-
 
 **Information display**
 
@@ -43,6 +42,11 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 [Tiny Wings](https://www.youtube.com/watch?v=x6pT_2E5xI0) - Tap and hold the screen to make the bird fly. Use hills and valleys to gain speed and flap as long as possible.  
 [SFCave](https://www.youtube.com/watch?v=WozidC1-ASs) - The player has to navigate a winding cave filled with obstacles using just one button and precision timing. (Inspiration for Flappy Bird)  
 [https://shakethatbutton.com/](https://shakethatbutton.com/) - Website with some good documentation of alternative control schemes for games and interactive arts.
+
+**Readings**
+
+[Formulary for a New Urbanism](http://www.uncarved.org/turb/articles/formulary.html)
+[Situationist International Anthology](http://www.bopsecrets.org/SI/index.htm) - Further Situationist readings.
 
 **Madness**
 
