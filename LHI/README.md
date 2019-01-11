@@ -7,8 +7,9 @@ This document will be updated with references, technical information and links a
 
 [Processing](https://www.processing.org/)
 
-[Circles GIST](https://gist.github.com/owenhindley/af2b74e532a612c000a986471f60a12c)
-[Speech To Text](http://florianschulz.info/stt/)
+[Circles GIST](https://gist.github.com/owenhindley/af2b74e532a612c000a986471f60a12c)  
+[Text To Scroller GIST](https://gist.github.com/owenhindley/5498a895003be4c122194ca7b14bc4bd)  
+[Speech To Text](http://florianschulz.info/stt/)  
 
 **Useful numbers**
 Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
