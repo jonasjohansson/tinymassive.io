@@ -9,6 +9,7 @@ This document will be updated with references, technical information and links a
 
 [Circles GIST](https://gist.github.com/owenhindley/af2b74e532a612c000a986471f60a12c)  
 [Text To Scroller GIST](https://gist.github.com/owenhindley/5498a895003be4c122194ca7b14bc4bd)  
+[Random Pulse GIST](https://gist.github.com/owenhindley/0e1bf81538720053f4b38c55c75022d5)
 [Speech To Text](http://florianschulz.info/stt/)  
 
 **Useful numbers**
