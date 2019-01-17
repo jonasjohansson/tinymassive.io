@@ -21,8 +21,8 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 **Syphoner download (OSX only**)
 [Syphoner](http://www.sigmasix.ch/syphoner/)
 
-**Harpa Preview (OSX only)**
-[Harpa Demo Scene](./assets/HarpaSyphonDemoScene.app.zip)  
+**Harpa Preview (OSX only)**  
+[HarpaDemoScene-noUI](./assets/HarpaSyphonDemoScene.app.zip)  
 [HarpaSyphonCapture](./assets/HarpaSyphonCapture.app.zip)  
 
 **Syphon After Effects plugin (OSX only)**
