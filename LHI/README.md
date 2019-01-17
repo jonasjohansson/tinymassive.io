@@ -3,14 +3,29 @@
 
 This document will be updated with references, technical information and links as the course progresses.
 
+## Processing
+
+[Processing](https://www.processing.org/)
+
+[Circles GIST](https://gist.github.com/owenhindley/af2b74e532a612c000a986471f60a12c)  
+[Text To Scroller GIST](https://gist.github.com/owenhindley/5498a895003be4c122194ca7b14bc4bd)  
+[Random Pulse GIST](https://gist.github.com/owenhindley/0e1bf81538720053f4b38c55c75022d5)  
+[Speech To Text](http://florianschulz.info/stt/)  
+[Webcam Pulse sensor](https://github.com/thearn/webcam-pulse-detector)
+
 **Useful numbers**
 Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 
+## Syphon Preview
+
 **Syphoner download (OSX only**)
 [Syphoner](http://www.sigmasix.ch/syphoner/)
+
 **Harpa Preview (OSX only)**
 [HarpaSyphonCapture](./assets/HarpaSyphonCapture.app.zip)
 
+**Syphon After Effects plugin (OSX only)**
+[After Effects Syphon plugin](http://tobiasebsen.dk/experiments/aesyphon/)
 
 
 ## References
@@ -22,11 +37,10 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 [PONG at the Philadelphia Cira Centre](https://www.youtube.com/watch?v=hnIK54dCbqI)  
 [Project Blinkenlights](https://www.youtube.com/watch?v=PZRUtKYCpms)  
 [Tel Aviv City Hall](https://www.youtube.com/watch?v=9rj8mYSuR-Y)  
-[Ryoji Ikeda](https://www.youtube.com/watch?v=JfcN9Qhfir4)  
+[Ryoji Ikeda at Times Square](https://www.youtube.com/watch?v=JfcN9Qhfir4)  
 [Wind Veil](https://www.youtube.com/watch?v=ZDPqrA4-jK0)  
 [Sydney Opera House / Universal Everything](https://vimeo.com/128256623)  
 [Kinetic buildings](https://www.youtube.com/watch?v=ivZk6fOtxZ0)  
-
 
 **Information display**
 
@@ -43,6 +57,11 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 [Tiny Wings](https://www.youtube.com/watch?v=x6pT_2E5xI0) - Tap and hold the screen to make the bird fly. Use hills and valleys to gain speed and flap as long as possible.  
 [SFCave](https://www.youtube.com/watch?v=WozidC1-ASs) - The player has to navigate a winding cave filled with obstacles using just one button and precision timing. (Inspiration for Flappy Bird)  
 [https://shakethatbutton.com/](https://shakethatbutton.com/) - Website with some good documentation of alternative control schemes for games and interactive arts.
+
+**Readings**
+
+[Formulary for a New Urbanism](http://www.uncarved.org/turb/articles/formulary.html)  
+[Situationist International Anthology](http://www.bopsecrets.org/SI/index.htm) - Further Situationist readings.  
 
 **Madness**
 
