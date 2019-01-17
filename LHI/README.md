@@ -11,6 +11,7 @@ This document will be updated with references, technical information and links a
 [Text To Scroller GIST](https://gist.github.com/owenhindley/5498a895003be4c122194ca7b14bc4bd)  
 [Random Pulse GIST](https://gist.github.com/owenhindley/0e1bf81538720053f4b38c55c75022d5)  
 [Speech To Text](http://florianschulz.info/stt/)  
+[Webcam Pulse sensor](https://github.com/thearn/webcam-pulse-detector)
 
 **Useful numbers**
 Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
