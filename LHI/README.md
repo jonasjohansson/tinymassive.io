@@ -5,7 +5,12 @@ This document will be updated with references, technical information and links a
 
 ## Processing
 
+Visit the main Processing site for examples, tutorials etc. Particularly worth checking out Daniel Shiffman's excellent video tutorials at [hello.processing.org](http://hello.processing.org/)  
+
+Main site :  
 [Processing](https://www.processing.org/)
+
+Sketches we went though in class :  
 
 [Circles GIST](https://gist.github.com/owenhindley/af2b74e532a612c000a986471f60a12c)  
 [Text To Scroller GIST](https://gist.github.com/owenhindley/5498a895003be4c122194ca7b14bc4bd)  
