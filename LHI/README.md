@@ -18,6 +18,20 @@ Sketches we went though in class :
 [Speech To Text](http://florianschulz.info/stt/)  
 [Webcam Pulse sensor](https://github.com/thearn/webcam-pulse-detector)
 
+**Further reading, sites covering this kind of work**
+
+Site covering artistic works that involve technology in some way:  
+[Creative Applications](http://www.creativeapplications.net/)
+
+Google's Christmas Experiments covers a variety of great little interactions, 24 little experiments every year since 2012.  
+[Christmas Experiments](https://christmasexperiments.com/)  
+
+Unity game engine - widely used software for making games, but also can be used in art applications, and the Syphon previews below are written in it.
+[Unity](https://unity3d.com/)
+
+Another creative coding framework - this one much more advanced + powerful, but if you want to get in at the deep end:
+[Open Frameworks](https://openframeworks.cc/)
+
 **Useful numbers**
 Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 
