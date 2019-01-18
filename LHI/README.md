@@ -18,19 +18,7 @@ Sketches we went though in class :
 [Speech To Text](http://florianschulz.info/stt/)  
 [Webcam Pulse sensor](https://github.com/thearn/webcam-pulse-detector)
 
-**Further reading, sites covering this kind of work**
 
-Site covering artistic works that involve technology in some way:  
-[Creative Applications](http://www.creativeapplications.net/)
-
-Google's Christmas Experiments covers a variety of great little interactions, 24 little experiments every year since 2012.  
-[Christmas Experiments](https://christmasexperiments.com/)  
-
-Unity game engine - widely used software for making games, but also can be used in art applications, and the Syphon previews below are written in it.
-[Unity](https://unity3d.com/)
-
-Another creative coding framework - this one much more advanced + powerful, but if you want to get in at the deep end:
-[Open Frameworks](https://openframeworks.cc/)
 
 **Useful numbers**
 Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
@@ -78,10 +66,23 @@ Side Facade: 39x9px / Front Facade: 38x13px / Total: 77x13px
 [SFCave](https://www.youtube.com/watch?v=WozidC1-ASs) - The player has to navigate a winding cave filled with obstacles using just one button and precision timing. (Inspiration for Flappy Bird)  
 [https://shakethatbutton.com/](https://shakethatbutton.com/) - Website with some good documentation of alternative control schemes for games and interactive arts.
 
-**Readings**
+**Further reading, sites covering this kind of work**
 
 [Formulary for a New Urbanism](http://www.uncarved.org/turb/articles/formulary.html)  
 [Situationist International Anthology](http://www.bopsecrets.org/SI/index.htm) - Further Situationist readings.  
+
+
+Site covering artistic works that involve technology in some way:  
+[Creative Applications](http://www.creativeapplications.net/)
+
+Google's Christmas Experiments covers a variety of great little interactions, 24 little experiments every year since 2012.  
+[Christmas Experiments](https://christmasexperiments.com/)  
+
+Unity game engine - widely used software for making games, but also can be used in art applications, and the Syphon previews below are written in it.
+[Unity](https://unity3d.com/)
+
+Another creative coding framework - this one much more advanced + powerful, but if you want to get in at the deep end:
+[Open Frameworks](https://openframeworks.cc/)
 
 **Madness**
 
