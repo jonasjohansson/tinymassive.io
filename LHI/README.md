@@ -82,7 +82,7 @@ Unity game engine - widely used software for making games, but also can be used 
 [Unity](https://unity3d.com/)
 
 Another creative coding framework - this one much more advanced + powerful, but if you want to get in at the deep end:
-[Open Frameworks](https://openframeworks.cc/)
+[Open Frameworks Gallery](https://openframeworks.cc/gallery/)
 
 **Madness**
 
