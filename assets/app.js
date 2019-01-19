@@ -99,7 +99,7 @@ function display(data) {
 		$days.classList.add("days");
 
 		$entry.appendChild($title);
-		$entry.appendChild($date);
+		// $entry.appendChild($date);
 		$entry.appendChild($days);
 
 		// $date.innerHTML = `${data.time}`;

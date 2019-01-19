@@ -91,11 +91,11 @@ header {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	width: 52vw;
 }
 
 .entry {
-	margin-bottom: var(--base);
-	height: var(--base);
+	display: block;
 }
 
 .entry > * {
@@ -114,6 +114,7 @@ header {
 	display: block;
 	float: left;
 	padding: 2px 4px;
+	/*text-transform: capitalize;*/
 }
 
 .day:not(:last-child) {
