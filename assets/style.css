@@ -1,10 +1,10 @@
 /*@import url("https://cdn.staticaly.com/gh/jonasjohansson/template/master/reset.css");*/
-@import url("type/type.css");
+@import url('type/type.css');
 
 :root {
 	--base: 28px;
 	--font-size: 14px;
-	--font-family: "Osmose-Light";
+	--font-family: 'Osmose-Light';
 }
 
 html {
@@ -31,6 +31,14 @@ h2 {
 
 p {
 	margin-bottom: var(--base);
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: purple;
 }
 
 video {
@@ -108,13 +116,15 @@ header {
 }
 
 .day {
-	background-color: grey;
-	color: white;
 	border-radius: 25%;
 	display: block;
 	float: left;
 	padding: 2px 4px;
-	/*text-transform: capitalize;*/
+	font-size: 10px;
+	text-transform: capitalize;
+	font-family: sans-serif;
+	background-color: blue;
+	color: white;
 }
 
 .day:not(:last-child) {
