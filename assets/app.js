@@ -1,6 +1,11 @@
 const now = new Date();
 const options = { timeZone: 'Europe/Stockholm', weekday: 'short', month: 'numeric', day: 'numeric' };
 
+window.addEventListener('load', () => {
+	document.documentElement.classList.remove('loading');
+	for (let a of document.querySelectorAll('a')) a.target = '_blank';
+});
+
 parseGSX('12YrlTik1EvQjONrpaSNdsgthdfsd4GJmZI4V-mAsk8c');
 
 function display(data) {

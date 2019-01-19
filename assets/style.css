@@ -1,4 +1,4 @@
-/*@import url("https://cdn.staticaly.com/gh/jonasjohansson/template/master/reset.css");*/
+/*@import url('https://cdn.staticaly.com/gh/jonasjohansson/template/master/reset.css');*/
 @import url('type/type.css');
 
 :root {
@@ -16,6 +16,13 @@ html {
 	/*color: white;*/
 	/*background-color: #f0f0f0;*/
 	/*color: #0a0a0a;*/
+	transition: opacity 400ms ease-in-out;
+	will-change: opacity;
+	opacity: 1;
+}
+
+html.loading {
+	opacity: 0;
 }
 
 h1 {
