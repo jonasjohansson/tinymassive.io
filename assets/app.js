@@ -35,8 +35,8 @@ function display(data) {
 		$input.id = entry;
 		$input.value = entry;
 		$input.checked = true;
-		$inputGroup.appendChild($label);
 		$inputGroup.appendChild($input);
+		$inputGroup.appendChild($label);
 		$filter.appendChild($inputGroup);
 		$input.addEventListener("change", e => {
 			$schedule.classList.toggle(`show-${entry}`, e.currentTarget.checked);
