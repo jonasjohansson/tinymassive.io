@@ -82,7 +82,7 @@ body {
 	padding: 0 4vw;
 }
 
-header {
+#intro {
 	/*height: 100vh;*/
 	/*background-image: url(https://tinymassive.io/assets/harpa.jpg);
 	background-size: cover;
@@ -136,6 +136,14 @@ header {
 
 .day:not(:last-child) {
 	margin-right: 4px;
+}
+
+footer img {
+	height: calc(var(--base) * 2);
+}
+
+footer img:not(:last-child) {
+	margin-right: var(--base);
 }
 
 @media (max-width: 899px) {
