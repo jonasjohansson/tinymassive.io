@@ -105,7 +105,9 @@ function display(data) {
 		$entry.appendChild($days);
 
 		// $date.innerHTML = `${data.time}`;
-		$title.innerHTML = `${data.title}. <a href="${data.link}">${data.name}</a>`;
+		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
+
+		$title.innerHTML = `${data.title}. ${name}`;
 		$schedule.appendChild($entry);
 	}
 
