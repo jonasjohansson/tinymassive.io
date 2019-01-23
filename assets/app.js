@@ -1,30 +1,25 @@
 const now = new Date();
 const options = { timeZone: 'Europe/Stockholm', weekday: 'short', month: 'numeric', day: 'numeric' };
+const days = ['thursday', 'friday', 'saturday', 'sunday'];
+const categories = ['video', 'interactive', 'live'];
 
 window.addEventListener('load', () => {
 	parseGSX('12YrlTik1EvQjONrpaSNdsgthdfsd4GJmZI4V-mAsk8c');
 });
 
 function display(data) {
-	var $schedule = document.querySelector('#schedule');
-	// const $days = [];
+	const $schedule = document.querySelector('#schedule');
+	const $days = [];
 
-	// for (let day of ["thursday", "friday", "saturday", "sunday"]) {
-	// 	$article = document.createElement("article");
-	// 	$h3 = document.createElement("h3");
-	// 	$h3.innerHTML = day;
-	// 	$article.appendChild($h3);
-	// 	$days.push($article);
-	// }
+	for (let article of document.querySelectorAll('article')) $days.push(article);
 
+	// create filter
 	var $filter = document.createElement('div');
 	$filter.classList.add('filter');
-
-	const days = ['thursday', 'friday', 'saturday', 'sunday'];
-	const categories = ['video', 'interactive', 'live'];
 	var $css = document.createElement('style');
 	$css.type = 'text/css';
 	document.body.appendChild($css);
+	$schedule.appendChild($filter);
 
 	// for (let entry of days.concat(categories)) {
 	for (let entry of categories) {
@@ -46,8 +41,6 @@ function display(data) {
 		$schedule.classList.add(`show-${entry}`);
 		$css.innerHTML += `#schedule:not(.show-${entry}) .${entry} { opacity:0.5; }`;
 	}
-
-	$schedule.appendChild($filter);
 
 	for (let row of data) {
 		const data = {
@@ -77,44 +70,67 @@ function display(data) {
 		// }
 
 		let $entry = document.createElement('div');
-		let $date = document.createElement('span');
+		let $time = document.createElement('span');
 		let $title = document.createElement('div');
-		let $days = document.createElement('div');
+		// let $days = document.createElement('div');
 
-		if (data.date == 'all') {
-			for (let day of days) {
-				$day = document.createElement('span');
-				$day.classList.add('day');
-				$day.innerHTML = day.substr(0, 2);
-				$days.appendChild($day);
-			}
-		} else {
-			$day = document.createElement('span');
-			$day.innerHTML = data.date;
-			$days.appendChild($day);
-		}
+		// if (data.date == 'all') {
+		// 	for (let day of days) {
+		// 		$day = document.createElement('span');
+		// 		$day.classList.add('day');
+		// 		$day.innerHTML = day.substr(0, 2);
+		// 		$days.appendChild($day);
+		// 	}
+		// } else {
+		// 	$day = document.createElement('span');
+		// 	$day.innerHTML = data.date;
+		// 	$days.appendChild($day);
+		// }
 
 		$entry.className = `${data.category} ${data.tag} ${data.date}`;
 
 		$entry.classList.add('entry');
 		$title.classList.add('title');
-		$days.classList.add('days');
+		$time.classList.add('time');
 
+		$entry.appendChild($time);
 		$entry.appendChild($title);
-		// $entry.appendChild($date);
-		$entry.appendChild($days);
 
-		// $date.innerHTML = `${data.time}`;
+		$time.innerHTML = `${data.time}`;
 		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
 
 		$title.innerHTML = `${data.title}. ${name}`;
-		$schedule.appendChild($entry);
+
+		switch (data.date) {
+			case 'all':
+				$time.parentNode.removeChild($time);
+				$days[0].appendChild($entry);
+				break;
+			case 'thursday':
+				$days[1].appendChild($entry);
+				break;
+			case 'friday':
+				$days[2].appendChild($entry);
+				break;
+			case 'saturday':
+				$days[3].appendChild($entry);
+				break;
+			case 'sunday':
+				$days[4].appendChild($entry);
+				break;
+		}
+
+		// $schedule.appendChild($entry);
 	}
 
-	// for (let $day of $days) $schedule.appendChild($day);
+	for (let $day of $days) $schedule.appendChild($day);
 
 	document.documentElement.classList.remove('loading');
 	for (let a of document.querySelectorAll('a')) a.target = '_blank';
+}
+
+function createFilter() {
+	return $filter;
 }
 
 function parseGSX(spreadsheetID) {

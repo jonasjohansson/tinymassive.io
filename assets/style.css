@@ -102,19 +102,23 @@ body {
 	margin-right: var(--base);
 }
 
-.title {
+/*.title {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	width: 52vw;
 }
-
+*/
 .entry {
 	display: block;
 }
 
 .entry > * {
 	display: inline-block;
+}
+
+.time {
+	margin-right: var(--base);
 }
 
 .days {
