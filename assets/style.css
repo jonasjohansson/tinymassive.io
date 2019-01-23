@@ -165,4 +165,7 @@ footer a:not(:last-child) {
 	h1 {
 		text-align: left;
 	}
+	article#all {
+		float: right;
+	}
 }

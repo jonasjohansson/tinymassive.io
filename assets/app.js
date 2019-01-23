@@ -19,7 +19,7 @@ function display(data) {
 	var $css = document.createElement('style');
 	$css.type = 'text/css';
 	document.body.appendChild($css);
-	$schedule.appendChild($filter);
+	// $schedule.appendChild($filter);
 
 	// for (let entry of days.concat(categories)) {
 	for (let entry of categories) {
