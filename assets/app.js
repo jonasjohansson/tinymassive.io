@@ -44,14 +44,16 @@ function display(data) {
 
 	for (let row of data) {
 		const data = {
-			name: row['name'],
+			name: row['artistname'] || row['name'],
 			title: row['title'],
 			category: row['category'],
 			tag: row['tag'],
 			link: row['link'],
 			email: row['email'],
 			date: row['date'],
-			time: row['time']
+			time: row['time'],
+			bio: row['bio'],
+			description: row['description']
 		};
 
 		// if (data.date == "all") {
@@ -72,6 +74,8 @@ function display(data) {
 		let $entry = document.createElement('div');
 		let $time = document.createElement('span');
 		let $title = document.createElement('div');
+		let $description = document.createElement('div');
+		let $bio = document.createElement('div');
 		// let $days = document.createElement('div');
 
 		// if (data.date == 'all') {
@@ -92,11 +96,17 @@ function display(data) {
 		$entry.classList.add('entry');
 		$title.classList.add('title');
 		$time.classList.add('time');
+		$description.classList.add('description');
+		$bio.classList.add('bio');
 
 		$entry.appendChild($time);
 		$entry.appendChild($title);
+		$entry.appendChild($description);
+		$entry.appendChild($bio);
 
 		$time.innerHTML = `${data.time}`;
+		$description.innerHTML = `${data.description}`;
+		$bio.innerHTML = `${data.bio}`;
 		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
 
 		$title.innerHTML = `${data.title}. ${name}`;

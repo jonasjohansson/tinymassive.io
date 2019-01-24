@@ -113,8 +113,14 @@ body {
 	display: block;
 }
 
+.entry:not(:first-child) {
+	border-top: 1px solid #ccc;
+	padding-top: var(--base);
+	margin-bottom: var(--base);
+}
+
 .entry > * {
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 .time {
