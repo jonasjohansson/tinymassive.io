@@ -9,20 +9,19 @@ window.addEventListener('load', () => {
 
 function display(data) {
 	const $schedule = document.querySelector('#schedule');
+	const $articles = document.querySelectorAll('article');
 	const $days = [];
 
-	for (let article of document.querySelectorAll('article')) $days.push(article);
+	// for (let article of $schedule.querySelectorAll('article')) $days.push(article);
 
 	// create filter
-	var $filter = document.createElement('div');
-	$filter.classList.add('filter');
+	var $filter = document.querySelector('#filter');
 	var $css = document.createElement('style');
 	$css.type = 'text/css';
 	document.body.appendChild($css);
-	// $schedule.appendChild($filter);
 
-	// for (let entry of days.concat(categories)) {
-	for (let entry of categories) {
+	for (let entry of days.concat(categories)) {
+	// for (let entry of categories) {
 		$inputGroup = document.createElement('div');
 		$label = document.createElement('label');
 		$label.setAttribute('for', entry);
@@ -39,7 +38,8 @@ function display(data) {
 			$schedule.classList.toggle(`show-${entry}`, e.currentTarget.checked);
 		});
 		$schedule.classList.add(`show-${entry}`);
-		$css.innerHTML += `#schedule:not(.show-${entry}) .${entry} { opacity:0.5; }`;
+		$css.innerHTML += `#schedule:not(.show-${entry}) .${entry} { display:none; }`;
+		// $css.innerHTML += `#schedule:not(.show-${entry}) .${entry} { opacity:0.5; }`;
 	}
 
 	for (let row of data) {
@@ -71,11 +71,12 @@ function display(data) {
 		// 	}
 		// }
 
+		let $toggle = document.createElement('button');
 		let $entry = document.createElement('div');
 		let $time = document.createElement('span');
-		let $title = document.createElement('div');
-		let $description = document.createElement('div');
-		let $bio = document.createElement('div');
+		let $title = document.createElement('h5');
+		let $description = document.createElement('p');
+		let $bio = document.createElement('p');
 		// let $days = document.createElement('div');
 
 		// if (data.date == 'all') {
@@ -93,50 +94,56 @@ function display(data) {
 
 		$entry.className = `${data.category} ${data.tag} ${data.date}`;
 
+		$toggle.classList.add('toggle');
 		$entry.classList.add('entry');
 		$title.classList.add('title');
 		$time.classList.add('time');
 		$description.classList.add('description');
 		$bio.classList.add('bio');
 
-		$entry.appendChild($time);
+		$entry.appendChild($toggle);
+		// $entry.appendChild($time);
 		$entry.appendChild($title);
 		$entry.appendChild($description);
 		$entry.appendChild($bio);
+
+		$toggle.innerHTML = '+';
+		$toggle.addEventListener('click',()=>{
+			$entry.classList.toggle('show-info');
+		});
 
 		$time.innerHTML = `${data.time}`;
 		$description.innerHTML = `${data.description}`;
 		$bio.innerHTML = `${data.bio}`;
 		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
 
-		$title.innerHTML = `${data.title}. ${name}`;
+		$title.innerHTML = `${data.time} ${data.title}. ${name}`;
 
 		switch (data.date) {
 			case 'all':
-				$time.parentNode.removeChild($time);
-				$days[0].appendChild($entry);
+				// $time.parentNode.removeChild($time);
+				$articles[0].appendChild($entry);
 				break;
 			case 'thursday':
-				$days[1].appendChild($entry);
+				$articles[1].appendChild($entry);
 				break;
 			case 'friday':
-				$days[2].appendChild($entry);
+				$articles[2].appendChild($entry);
 				break;
 			case 'saturday':
-				$days[3].appendChild($entry);
+				$articles[3].appendChild($entry);
 				break;
 			case 'sunday':
-				$days[4].appendChild($entry);
+				$articles[4].appendChild($entry);
 				break;
 		}
 
 		// $schedule.appendChild($entry);
 	}
 
-	for (let $day of $days) $schedule.appendChild($day);
+	// for (let $day of $days) $schedule.appendChild($day);
 
 	document.documentElement.classList.remove('loading');
-	for (let a of document.querySelectorAll('a')) a.target = '_blank';
 }
 
 function createFilter() {

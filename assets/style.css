@@ -1,92 +1,99 @@
-/*@import url('https://cdn.staticaly.com/gh/jonasjohansson/template/master/reset.css');*/
-@import url('type/type.css');
-
 :root {
-	--base: 28px;
-	--font-size: 14px;
-	--font-family: 'Osmose-Light';
+	--base: 24px;
 }
 
 html {
-	/*font-family: var(--font-family);*/
-	/*font-family: system-ui;*/
-	/*font-size: var(--font-size);*/
-	line-height: 1.5;
-	/*background-color: black;*/
-	/*color: white;*/
-	/*background-color: #f0f0f0;*/
-	/*color: #0a0a0a;*/
-	transition: opacity 400ms ease-in-out;
-	will-change: opacity;
-	opacity: 1;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
-html.loading {
-	opacity: 0;
+body {
+	margin: 0;
+	padding: calc(var(--base) * 2) 0;
+	font: 20px/1.5 'Maison Neue Book', system-ui;
+	background-color: rgb(110, 110, 110);
+	color: rgba(255, 255, 255, 0.7);
+	color: rgb(230, 230, 230);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
-h1 {
-	font-size: 2.2rem;
-	/*font-family: "EKA-Absolution-Regular";*/
-	text-align: center;
+figure {
+	margin-left: 0;
+	margin-right: 0;
 }
 
-h2 {
-	/*font-size: var(--font-size);*/
-	text-transform: uppercase;
-}
-
-p {
-	margin-bottom: var(--base);
-}
-
-a:link {
-	color: blue;
-}
-
-a:visited {
-	color: purple;
-}
-
-video {
-	float: left;
-	width: 50%;
+figure img,
+figure video {
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	box-sizing: border-box;
 }
 
-video:first-of-type {
-	padding-right: 0.25rem;
-}
-
-video:last-of-type {
-	padding-left: 0.25rem;
+section,
+hr {
+	margin: 0 auto;
+	padding: 0 calc(var(--base) * 1.5);
+	box-sizing: border-box;
+	max-width: 80ex;
 }
 
 hr {
-	clear: both;
+	opacity: 0.25;
+}
+
+a {
+	color: inherit;
+	/*text-decoration: none;*/
+}
+
+h1 span {
+	display: none;
+}
+
+h2 {
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+h4,
+h5 {
+	font-size: 0.9em;
+}
+
+ul {
+	list-style: square;
 }
 
 button {
-	text-transform: uppercase;
-	font-weight: bold;
-	border-radius: 4px;
-	background-color: white;
-	color: black;
+	position: relative;
+	padding: 4px;
+	top: -2px;
+	font-family: inherit;
+	cursor: pointer;
 }
 
-/* */
+/* entries */
 
-body {
-	padding: 0 4vw;
+.entry {
+	position: relative;
 }
 
-#intro {
-	/*height: 100vh;*/
-	/*background-image: url(https://tinymassive.io/assets/harpa.jpg);
-	background-size: cover;
-	background-position: center center;*/
+.toggle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 2px;
+	left: -28px;
+}
+
+.entry:not(.show-info) .description,
+.entry:not(.show-info) .bio {
+	display: none;
 }
 
 .filter {
@@ -102,25 +109,8 @@ body {
 	margin-right: var(--base);
 }
 
-/*.title {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	width: 52vw;
-}
-*/
 .entry {
 	display: block;
-}
-
-.entry:not(:first-child) {
-	border-top: 1px solid #ccc;
-	padding-top: var(--base);
-	margin-bottom: var(--base);
-}
-
-.entry > * {
-	/*display: inline-block;*/
 }
 
 .time {
@@ -148,30 +138,20 @@ body {
 	margin-right: 4px;
 }
 
-footer img {
-	height: calc(var(--base) * 2);
-}
-
-footer a:not(:last-child) {
+.sponsors a:not(:last-child) {
 	margin-right: var(--base);
+	margin-bottom: calc(var(--base) / 2);
 }
 
-@media (max-width: 899px) {
-	:root {
-		--base: 14px;
-	}
-	/*h1 {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-	}*/
+.sponsors a {
+	float: left;
+	clear: left;
+	display: block;
 }
 
-@media (min-width: 900px) {
-	h1 {
-		text-align: left;
-	}
-	article#all {
-		float: right;
-	}
+@font-face {
+	font-family: 'Maison Neue Book';
+	src: url('MaisonNeue-Book.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
