@@ -8,7 +8,7 @@
 	<script src="./js/HarpaCanvasFixtureView.js"></script>
 	<script src="./js/visualisers/HarpaVideoVisualiser.js"></script>
 	<script src="./js/App.js"></script>
-	<link rel="stylesheet" href="https://jonasjohansson.github.io/template/template-raw.css">
+	<base target="_blank">
 	<link rel="stylesheet" href="../assets/style.css">
 	<style>
 		section > div {
@@ -23,38 +23,35 @@
 	</style>
 </head>
 <body style="background-color:black;color:white;">
-	<header>
+	<section>
 		<h1>Visualiser</h1>
-	</header>
+	</section>
+	<section id="canvasContainer">
+		<div class="visualiserContainer" id="sideContainer">
+			<h2>Side Facade</h2>
+		</div>
+		<div class="visualiserContainer" id="frontContainer">
+			<h2>Front Facade</h2>
+		</div>
+		<br style="clear:both;">
+	</section>
 	<hr>
-	<main>
-		<section id="canvasContainer">
-			<div class="visualiserContainer" id="sideContainer">
-				<h2>Side Facade</h2>
-			</div>
-			<div class="visualiserContainer" id="frontContainer">
-				<h2>Front Facade</h2>
-			</div>
-			<br style="clear:both;">
-		</section>
-		<hr>
-		<section id="textureContainer">
-			<h2>Textures</h2>
-			<div id="sideTextureContainer">
-			</div>
-			<div id="frontTextureContainer">
-			</div>
-			<br style="clear:both;">
-		</section>
-		<hr>
-		<section id="audioInput">
-			<h2>Video file (MP4 / WEBM / OGG format only)</h2>
-			<input id="videoSelector" type="file" accept="video/*"/>
-			<br><br>
-			<video id="player" src="video.mov" type="video/mov" width="320" height="240" loop controls muted autoplay playsinline>
-			</video>
-			<p>If you're having problems, <a href="http://www.mirovideoconverter.com/" target="_blank">Miro</a> or <a href="https://handbrake.fr/downloads.php" target="_blank">Handbrake</a> should help convert into the correct format.</p>
-		</section>
-	</main>
+	<section id="textureContainer">
+		<h2>Textures</h2>
+		<div id="sideTextureContainer">
+		</div>
+		<div id="frontTextureContainer">
+		</div>
+		<br style="clear:both;">
+	</section>
+	<hr>
+	<section id="audioInput">
+		<h2>Video file (MP4 / WEBM / OGG format only)</h2>
+		<input id="videoSelector" type="file" accept="video/*"/>
+		<br><br>
+		<video id="player" src="video.mov" type="video/mov" width="320" height="240" loop controls muted autoplay>
+		</video>
+		<p>If you're having problems, <a href="http://www.mirovideoconverter.com/">Miro</a> or <a href="https://handbrake.fr/downloads.php">Handbrake</a> should help convert into the correct format.</p>
+	</section>
 </body>
 </html>
