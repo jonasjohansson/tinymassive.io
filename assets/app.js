@@ -109,6 +109,7 @@ function display(data) {
 
 		$toggle.innerHTML = '+';
 		$toggle.addEventListener('click',()=>{
+			// for (let show of document.querySelectorAll('.show-info')) show.classList.remove('show-info');
 			$entry.classList.toggle('show-info');
 		});
 
