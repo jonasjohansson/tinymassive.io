@@ -115,7 +115,7 @@ function display(data) {
 
 		$time.innerHTML = `${data.time}`;
 		$description.innerHTML = `${data.description}`;
-		$bio.innerHTML = `${data.bio}`;
+		$bio.innerHTML = urlify(data.bio);
 		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
 
 		$title.innerHTML = `${data.time} ${data.title}. ${name}`;
@@ -155,6 +155,15 @@ function parseGSX(spreadsheetID) {
 	var url = 'https://spreadsheets.google.com/feeds/list/' + spreadsheetID + '/1/public/values?alt=json';
 	var ajax = $.ajax(url);
 	$.when(ajax).then(parseRawData);
+}
+
+function urlify(text) {
+    var urlRegex = /(https?:\/\/[^\s]+)/g;
+    return text.replace(urlRegex, function(url) {
+        return '<a href="' + url + '">' + url + '</a>';
+    })
+    // or alternatively
+    // return text.replace(urlRegex, '<a href="$1">$1</a>')
 }
 
 function parseRawData(res) {
