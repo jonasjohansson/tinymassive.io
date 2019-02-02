@@ -158,8 +158,8 @@ button {
 
 .sponsors a {
 	float: left;
-	clear: left;
-	display: block;
+	/*clear: left;*/
+	/*display: block;*/
 }
 
 @font-face {
