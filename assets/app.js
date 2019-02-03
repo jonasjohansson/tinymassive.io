@@ -14,6 +14,7 @@ function display(data) {
 
 	// for (let article of $schedule.querySelectorAll('article')) $days.push(article);
 
+
 	// create filter
 	var $filter = document.querySelector('#filter');
 	var $css = document.createElement('style');
@@ -53,23 +54,12 @@ function display(data) {
 			date: row['date'],
 			time: row['time'],
 			bio: row['bio'],
+			credits: row['credits'],
 			description: row['description']
 		};
 
-		// if (data.date == "all") {
-		// 	for (let $day of $days) {
-		// 		let $entry = document.createElement("div");
-		// 		let $date = document.createElement("span");
-		// 		let $title = document.createElement("span");
-
-		// 		$entry.appendChild($date);
-		// 		$entry.appendChild($title);
-
-		// 		$date.innerHTML = `${data.time}`;
-		// 		$title.innerHTML = `${data.title} by ${data.name}`;
-		// 		$day.appendChild($entry);
-		// 	}
-		// }
+		data.bio = format(data.bio);
+		data.credits = format(data.credits);
 
 		let $toggle = document.createElement('button');
 		let $entry = document.createElement('div');
@@ -77,35 +67,23 @@ function display(data) {
 		let $title = document.createElement('h5');
 		let $description = document.createElement('p');
 		let $bio = document.createElement('p');
-		// let $days = document.createElement('div');
-
-		// if (data.date == 'all') {
-		// 	for (let day of days) {
-		// 		$day = document.createElement('span');
-		// 		$day.classList.add('day');
-		// 		$day.innerHTML = day.substr(0, 2);
-		// 		$days.appendChild($day);
-		// 	}
-		// } else {
-		// 	$day = document.createElement('span');
-		// 	$day.innerHTML = data.date;
-		// 	$days.appendChild($day);
-		// }
+		let $credits = document.createElement('p');
 
 		$entry.className = `${data.category} ${data.tag} ${data.date}`;
 
 		$toggle.classList.add('toggle');
 		$entry.classList.add('entry');
 		$title.classList.add('title');
-		$time.classList.add('time');
 		$description.classList.add('description');
 		$bio.classList.add('bio');
+		$credits.classList.add('credits');
 
 		$entry.appendChild($toggle);
 		// $entry.appendChild($time);
 		$entry.appendChild($title);
 		$entry.appendChild($description);
 		$entry.appendChild($bio);
+		$entry.appendChild($credits);
 
 		$toggle.innerHTML = '+';
 		$toggle.addEventListener('click',()=>{
@@ -115,7 +93,8 @@ function display(data) {
 
 		$time.innerHTML = `${data.time}`;
 		$description.innerHTML = `${data.description}`;
-		$bio.innerHTML = urlify(data.bio);
+		$bio.innerHTML = data.bio;
+		$credits.innerHTML = data.credits;
 		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
 
 		$title.innerHTML = `${data.time} ${data.title}. ${name}`;
@@ -144,7 +123,7 @@ function display(data) {
 
 	// for (let $day of $days) $schedule.appendChild($day);
 
-	document.documentElement.classList.remove('loading');
+	// document.documentElement.classList.remove('loading');
 }
 
 function createFilter() {
@@ -157,13 +136,10 @@ function parseGSX(spreadsheetID) {
 	$.when(ajax).then(parseRawData);
 }
 
-function urlify(text) {
+function format(text) {
     var urlRegex = /(https?:\/\/[^\s]+)/g;
-    return text.replace(urlRegex, function(url) {
-        return '<a href="' + url + '">' + url + '</a>';
-    })
-    // or alternatively
-    // return text.replace(urlRegex, '<a href="$1">$1</a>')
+    text = text.replace(urlRegex, '<a href="$1">$1</a>');
+    return text.replace(/(?:\r\n|\r|\n)/g, '<br>')
 }
 
 function parseRawData(res) {

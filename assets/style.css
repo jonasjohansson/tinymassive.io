@@ -102,8 +102,7 @@ button {
 	left: -28px;
 }
 
-.entry:not(.show-info) .description,
-.entry:not(.show-info) .bio {
+.entry:not(.show-info) > p {
 	display: none;
 }
 
