@@ -149,15 +149,16 @@ button {
 	margin-right: 4px;
 }
 
+.sponsors {
+	margin: 0;
+}
+
 .sponsors a:not(:last-child) {
-	margin-right: var(--base);
-	margin-bottom: calc(var(--base) / 2);
+	margin-right: calc(var(--base) * 1.5);
 }
 
 .sponsors a {
-	float: left;
-	/*clear: left;*/
-	/*display: block;*/
+	display: inline;
 }
 
 @font-face {
