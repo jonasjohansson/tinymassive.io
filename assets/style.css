@@ -85,7 +85,8 @@ button {
 
 /* entries */
 
-.bio {
+.bio,
+.credits {
 	font-style: italic;
 }
 
