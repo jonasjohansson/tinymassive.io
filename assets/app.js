@@ -1,7 +1,6 @@
 const now = new Date();
-const options = { timeZone: 'Europe/Stockholm', weekday: 'short', month: 'numeric', day: 'numeric' };
+const options = { timeZone: 'Atlantic/Reykjavik', weekday: 'long'};
 const days = ['thursday', 'friday', 'saturday', 'sunday'];
-const categories = ['video', 'interactive', 'live'];
 
 window.addEventListener('load', () => {
 	parseGSX('12YrlTik1EvQjONrpaSNdsgthdfsd4GJmZI4V-mAsk8c');
@@ -10,38 +9,53 @@ window.addEventListener('load', () => {
 function display(data) {
 	const $schedule = document.querySelector('#schedule');
 	const $articles = document.querySelectorAll('article');
-	const $days = [];
 
-	// for (let article of $schedule.querySelectorAll('article')) $days.push(article);
+	const nowPlaying = (document.body.id == 'now-playing') ? true : false;
 
+	data.sort(compare);
 
-	// create filter
-	var $filter = document.querySelector('#filter');
-	var $css = document.createElement('style');
-	$css.type = 'text/css';
-	document.body.appendChild($css);
+	var thursday = data.filter(function (el) {
+	  return el.day == 'thursday';
+	});
 
-	for (let entry of days.concat(categories)) {
-	// for (let entry of categories) {
-		$inputGroup = document.createElement('div');
-		$label = document.createElement('label');
-		$label.setAttribute('for', entry);
-		$label.innerHTML = entry;
-		$input = document.createElement('input');
-		$input.type = 'checkbox';
-		$input.id = entry;
-		$input.value = entry;
-		$input.checked = true;
-		$inputGroup.appendChild($input);
-		$inputGroup.appendChild($label);
-		$filter.appendChild($inputGroup);
-		$input.addEventListener('change', e => {
-			$schedule.classList.toggle(`show-${entry}`, e.currentTarget.checked);
-		});
-		$schedule.classList.add(`show-${entry}`);
-		$css.innerHTML += `#schedule:not(.show-${entry}) .${entry} { display:none; }`;
-		// $css.innerHTML += `#schedule:not(.show-${entry}) .${entry} { opacity:0.5; }`;
+	let day = now.getDay();
+	let hour = 20 || now.getHours();
+	let minutes = 29 || now.getMinutes();
+	let dayName = now.toLocaleDateString('se-SE', options);
+	dayName = 'Thursday';
+
+	console.log(`${hour}:${minutes}`);   
+
+	// it's during the event
+	if (day >= 3 && day <= 6){
+		if (hour >= 19 && hour <= 23){
+			let current = data.filter(el => {
+				return el.day == dayName.toLowerCase() &&
+					el.time >= `${hour}:00` &&
+					el.time <= `${hour}:${minutes}`
+			});
+			current = (current.length > 0) ? current[current.length-1] : current;
+			console.log(current);
+		}
 	}
+	switch (now.getDay()){
+		case 0:
+		break;
+		case 1:
+		break;
+		case 2:
+		break;
+		case 3:
+		break;
+		case 4:
+		break;
+		case 5:
+		break;
+		case 6:
+		break;
+	}
+
+	data.sort(compare);
 
 	for (let row of data) {
 		const data = {
@@ -49,59 +63,50 @@ function display(data) {
 			title: row['title'],
 			category: row['category'],
 			tag: row['tag'],
-			link: row['link'],
-			email: row['email'],
-			date: row['date'],
-			time: row['time'],
+			description: row['description'],
+			instructions: row['instructions'],
 			bio: row['bio'],
 			credits: row['credits'],
-			description: row['description']
+			link: row['link'],
+			email: row['email'],
+			day: row['day'],
+			time: row['time'],
 		};
 
-		data.bio = format(data.bio);
-		data.credits = format(data.credits);
+		let $entry = createEl('div','entry');
+		$entry.className = `entry ${data.category} ${data.tag} ${data.day}`;
 
-		let $toggle = document.createElement('button');
-		let $entry = document.createElement('div');
-		let $time = document.createElement('span');
-		let $title = document.createElement('h5');
-		let $description = document.createElement('p');
-		let $bio = document.createElement('p');
-		let $credits = document.createElement('p');
+		if (!nowPlaying){
+			let $toggle = createEl('button','toggle',$entry);
+			$toggle.innerHTML = '+';
+			$toggle.addEventListener('click',()=>{
+				$entry.classList.toggle('show-info');
+			});
+		}
 
-		$entry.className = `${data.category} ${data.tag} ${data.date}`;
+		let $title = createEl('h5','title',$entry);
+		
+		var $description = createEl('p','description',$entry);
+		$description.innerHTML = data.description;
+	
+		if (nowPlaying){
+			let $instructions = createEl('p','instructions',$entry);
+			$instructions.innerHTML = `<h3>How to play</h3>${data.instructions}`;
+		}
 
-		$toggle.classList.add('toggle');
-		$entry.classList.add('entry');
-		$title.classList.add('title');
-		$description.classList.add('description');
-		$bio.classList.add('bio');
-		$credits.classList.add('credits');
+		if (!nowPlaying){
+			let $bio = createEl('p','bio',$entry);
+			$bio.innerHTML = format(data.bio);
+			let $credits = createEl('p','credits',$entry);
+			$credits.innerHTML = format(data.credits);
+		}
 
-		$entry.appendChild($toggle);
-		// $entry.appendChild($time);
-		$entry.appendChild($title);
-		$entry.appendChild($description);
-		$entry.appendChild($bio);
-		$entry.appendChild($credits);
-
-		$toggle.innerHTML = '+';
-		$toggle.addEventListener('click',()=>{
-			// for (let show of document.querySelectorAll('.show-info')) show.classList.remove('show-info');
-			$entry.classList.toggle('show-info');
-		});
-
-		$time.innerHTML = `${data.time}`;
-		$description.innerHTML = `${data.description}`;
-		$bio.innerHTML = data.bio;
-		$credits.innerHTML = data.credits;
 		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
 
-		$title.innerHTML = `${data.time} ${data.title}. ${name}`;
+		$title.innerHTML = `${data.time} ${data.title} <span class="name">${name}</span>`;
 
-		switch (data.date) {
+		switch (data.day) {
 			case 'all':
-				// $time.parentNode.removeChild($time);
 				$articles[0].appendChild($entry);
 				break;
 			case 'thursday':
@@ -117,17 +122,23 @@ function display(data) {
 				$articles[4].appendChild($entry);
 				break;
 		}
-
-		// $schedule.appendChild($entry);
 	}
-
-	// for (let $day of $days) $schedule.appendChild($day);
-
-	// document.documentElement.classList.remove('loading');
 }
 
-function createFilter() {
-	return $filter;
+
+function compare(a,b) {
+  if (a.time < b.time)
+    return -1;
+  if (a.time > b.time)
+    return 1;
+  return 0;
+}
+
+function createEl(type,name,parent = false){
+	let el = document.createElement(type);
+	el.classList.add(name);
+	if (parent !== false) parent.appendChild(el);
+	return el;
 }
 
 function parseGSX(spreadsheetID) {

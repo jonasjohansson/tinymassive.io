@@ -103,7 +103,7 @@ button {
 	left: -28px;
 }
 
-.entry:not(.show-info) > p {
+body:not(#now-playing) .entry:not(.show-info) > p {
 	display: none;
 }
 
@@ -128,6 +128,12 @@ button {
 	margin-right: var(--base);
 }
 
+.name,
+.bio {
+	font-style: italic;
+	opacity: 0.7;
+}
+
 .days {
 	clear: both;
 	float: right;
@@ -149,16 +155,43 @@ button {
 	margin-right: 4px;
 }
 
+/* now playing */
+
+#now-playing {
+	scroll-snap-type: y mandatory;
+	scroll-padding: var(--base);
+}
+
+#now-playing .entry {
+	height: 100vh;
+	scroll-snap-align: start;
+}
+
+#now-playing h1 {
+	position: fixed;
+	top: 0;
+	text-align: center;
+}
+#now-playing h5 {
+	text-align: center;
+}
+
+#now-playing .name {
+	display: block;
+}
+
+/* sponsors */
+
 .sponsors {
 	margin: 0;
 }
 
-.sponsors a:not(:last-child) {
-	margin-right: calc(var(--base) * 1.5);
-}
-
 .sponsors a {
 	display: inline;
+}
+
+.sponsors a:not(:last-child) {
+	margin-right: calc(var(--base) * 1.5);
 }
 
 @font-face {
