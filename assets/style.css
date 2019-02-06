@@ -178,13 +178,11 @@ body:not(#now-playing) .entry:not(.show-info) > p {
 	margin-left: 0;
 }
 
-#now-playing h1 {
-	text-align: center;
-}
 #now-playing h5 {
 	text-align: center;
 }
 
+#now-playing .time,
 #now-playing .name {
 	display: block;
 }

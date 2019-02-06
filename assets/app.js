@@ -103,8 +103,12 @@ function display(data) {
 
 		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
 
-		$title.innerHTML = `${data.time} ${data.title} <span class="name">${name}</span>`;
-
+		if (nowPlaying){
+			$title.innerHTML = `${data.title} <span class="name">${name}</span>`;
+		} else {
+			$title.innerHTML = `${data.time} ${data.title} <span class="name">${name}</span>`;
+		}
+		
 		switch (data.day) {
 			case 'all':
 				$articles[0].appendChild($entry);
