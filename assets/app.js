@@ -84,12 +84,20 @@ function display(data) {
 			});
 		}
 
-		let $title = createEl('h5','title',$entry);
-		
+		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
+
+		if (nowPlaying) {
+			let $title = createEl('h3','title',$entry);
+			$title.innerHTML = `${data.title} <span class="name">${name}</span>`;
+		} else {
+			let $title = createEl('h5','title',$entry);
+			$title.innerHTML = `${data.time} ${data.title} <span class="name">${name}</span>`;
+		}
+
 		var $description = createEl('p','description',$entry);
 		$description.innerHTML = data.description;
 	
-		if (nowPlaying){
+		if (nowPlaying && data.instructions){
 			let $instructions = createEl('p','instructions',$entry);
 			$instructions.innerHTML = `<h3>How to play</h3>${data.instructions}`;
 		}
@@ -101,14 +109,6 @@ function display(data) {
 			$credits.innerHTML = format(data.credits);
 		}
 
-		var name = data.link ? `<a href="${data.link}">${data.name}</a>` : data.name;
-
-		if (nowPlaying){
-			$title.innerHTML = `${data.title} <span class="name">${name}</span>`;
-		} else {
-			$title.innerHTML = `${data.time} ${data.title} <span class="name">${name}</span>`;
-		}
-		
 		switch (data.day) {
 			case 'all':
 				$articles[0].appendChild($entry);

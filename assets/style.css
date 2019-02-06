@@ -55,10 +55,7 @@ h2 {
 	text-transform: uppercase;
 }
 
-h3 {
-	font-size: 1em;
-}
-
+h3,
 h4,
 h5 {
 	font-size: 1em;
@@ -197,7 +194,7 @@ body:not(#now-playing) .entry:not(.show-info) > p {
 	margin-left: 0;
 }
 
-#now-playing h5 {
+#now-playing h3 {
 	text-align: center;
 }
 
