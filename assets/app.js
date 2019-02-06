@@ -131,11 +131,11 @@ function display(data) {
 
 
 function compare(a,b) {
-  if (a.time < b.time)
-    return -1;
-  if (a.time > b.time)
-    return 1;
-  return 0;
+	if (a.time < b.time)
+		return -1;
+	if (a.time > b.time)
+		return 1;
+	return 0;
 }
 
 function createEl(type,name,parent = false){
@@ -152,9 +152,9 @@ function parseGSX(spreadsheetID) {
 }
 
 function format(text) {
-    var urlRegex = /(https?:\/\/[^\s]+)/g;
-    text = text.replace(urlRegex, '<a href="$1">$1</a>');
-    return text.replace(/(?:\r\n|\r|\n)/g, '<br>')
+	var urlRegex = /(https?:\/\/[^\s]+)/g;
+	text = text.replace(urlRegex, '<a href="$1">$1</a>');
+	return text.replace(/(?:\r\n|\r|\n)/g, '<br>')
 }
 
 function parseRawData(res) {
