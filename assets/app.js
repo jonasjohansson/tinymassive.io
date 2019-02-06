@@ -89,10 +89,10 @@ function display(data) {
 		var $description = createEl('p','description',$entry);
 		$description.innerHTML = data.description;
 	
-		if (nowPlaying){
-			let $instructions = createEl('p','instructions',$entry);
-			$instructions.innerHTML = `<h3>How to play</h3>${data.instructions}`;
-		}
+		// if (nowPlaying){
+		// 	let $instructions = createEl('p','instructions',$entry);
+		// 	$instructions.innerHTML = `<h3>How to play</h3>${data.instructions}`;
+		// }
 
 		if (!nowPlaying){
 			let $bio = createEl('p','bio',$entry);
