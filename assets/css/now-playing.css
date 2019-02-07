@@ -63,7 +63,8 @@
 	text-align: center;
 }
 
-#now-playing #all .description {
+#now-playing #all .description,
+#now-playing #all .bio {
 	display: none;
 }
 
