@@ -64,7 +64,8 @@
 }
 
 #now-playing #all .description,
-#now-playing #all .bio {
+#now-playing #all .bio,
+#now-playing #all .credits {
 	display: none;
 }
 
