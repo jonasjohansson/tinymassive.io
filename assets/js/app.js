@@ -100,11 +100,8 @@ function display(data) {
 		
 		let $bio = createEl('p','bio',$inner);
 		$bio.innerHTML = format(data.bio);
-
-		if (!nowPlaying){
-			let $credits = createEl('p','credits',$inner);
-			$credits.innerHTML = format(data.credits);
-		}
+		let $credits = createEl('p','credits',$inner);
+		$credits.innerHTML = format(data.credits);
 
 		switch (data.day) {
 			case 'all':
