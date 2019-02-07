@@ -33,17 +33,31 @@
 }
 
 #now-playing .entry {
-	/*min-height: 100vh;*/
-	height: 100vh;
-	scroll-snap-align: start;
 	margin-left: 0;
 }
 
-#now-playing .inner {
+#now-playing article {
+	min-height: 100vh;
+}
+
+#now-playing .entry {
+	/*min-height: 100vh;*/
+	height: 100vh;
+	scroll-snap-align: start;
+}
+
+/*#now-playing .inner {
 	position: relative;
-	top: calc(50% - (var(--base) * 4));
 	transform: translateY(-50%);
 }
+
+#now-playing #all .inner {
+	top: 50%;
+}
+
+#now-playing article:not(#all) .inner {
+	top: calc(50% - (var(--base) * 4));
+}*/
 
 #now-playing h3 {
 	text-align: center;
