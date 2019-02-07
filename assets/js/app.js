@@ -97,10 +97,11 @@ function display(data) {
 			let $instructions = createEl('p','instructions',$inner);
 			$instructions.innerHTML = `<h3>How to play</h3>${data.instructions}`;
 		}
+		
+		let $bio = createEl('p','bio',$inner);
+		$bio.innerHTML = format(data.bio);
 
 		if (!nowPlaying){
-			let $bio = createEl('p','bio',$inner);
-			$bio.innerHTML = format(data.bio);
 			let $credits = createEl('p','credits',$inner);
 			$credits.innerHTML = format(data.credits);
 		}
