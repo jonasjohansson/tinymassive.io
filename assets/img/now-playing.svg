@@ -1,1 +1,25 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4501.73 456.32"><defs><style>.cls-1{font-size:412.03px;fill:#fff;font-family:Osmose-Regular, Osmose;letter-spacing:0.06em;}.cls-2{letter-spacing:0.04em;}.cls-3{letter-spacing:-0.03em;}.cls-4{letter-spacing:0.03em;}.cls-5{letter-spacing:0.06em;}</style></defs><title>now-playing</title><text class="cls-1" transform="translate(0 353.32) scale(1.29 1)">N<tspan class="cls-2" x="329.62" y="0">O</tspan><tspan x="661.72" y="0">W PL</tspan><tspan class="cls-3" x="1916.34" y="0">A</tspan><tspan class="cls-4" x="2206.82" y="0">Y</tspan><tspan class="cls-5" x="2477.93" y="0">ING</tspan></text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 4501.7 456.3" style="enable-background:new 0 0 4501.7 456.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M29.2,58.7H76l241.3,239.8V58.7h46.8v294.6h-46.8L76,113.5v239.8H29.2V58.7z"/>
+<path class="st0" d="M446.5,202.5c0-63,36.1-150.4,182.3-150.4c146.2,0,182.3,87.4,182.3,150.4c0,69.2-43.6,157-182.3,157
+	C490.1,359.5,446.5,271.7,446.5,202.5z M760.6,201.3c0-48.6-20.7-113.3-131.8-113.3C518.2,88,497,152.2,497,201.3
+	c0,56,27.6,122.4,131.8,122.4C733,323.7,760.6,257.3,760.6,201.3z"/>
+<path class="st0" d="M856.3,58.7h49.4l88.2,262.5l121.2-262.5h52.1l121.2,262.5l88.2-262.5h49.4l-101,294.6H1256l-114.8-253
+	l-114.8,253h-69.1L856.3,58.7z"/>
+<path class="st0" d="M1681.2,58.7h189.8c108.4,0,146.7,35.4,146.7,86.5c0,61.4-55.8,83.6-146.7,83.6l-143-0.4v124.8h-46.8V58.7z
+	 M1870.9,194.7c61.1,0,101-8.7,101-49c0-32.6-25.5-52.7-101-52.7h-143v101.8H1870.9z"/>
+<path class="st0" d="M2100,58.7h46.8v260.4H2411v34.2H2100V58.7z"/>
+<path class="st0" d="M2634.2,58.7h69.1l159.5,294.6h-49.4l-47.3-88.6h-194.5l-47.3,88.6h-49.4L2634.2,58.7z M2747.9,230.5
+	l-79.2-144.2l-79.2,144.2H2747.9z"/>
+<path class="st0" d="M2990.3,251.5L2849.5,58.7h52.1L3013.7,212l112.2-153.3h52.1l-140.9,192.8v101.8h-46.8V251.5z"/>
+<path class="st0" d="M3225.8,319.1h157.3V92.9h-157.3V58.7h361.4v34.2h-157.3v226.2h157.3v34.2h-361.4V319.1z"/>
+<path class="st0" d="M3677.5,58.7h46.8l241.3,239.8V58.7h46.8v294.6h-46.8l-241.3-239.8v239.8h-46.8V58.7z"/>
+<path class="st0" d="M4094.8,203.8c0-106.3,80.8-151.6,180.7-151.6c94.6,0,165.8,40.8,175.4,103.8h-52.1c-9.6-42.9-55.8-68-121.7-68
+	c-80.3,0-132.3,37.1-132.3,115.8c0,86.5,63.3,121.1,131.8,121.1c61.7,0,120.1-27.6,120.1-84.5h-92v-36.3h146.7v149.2h-30.8l-8.5-54
+	c-11.2,36.3-70.2,60.2-138.7,60.2C4173.5,359.5,4094.8,308.8,4094.8,203.8z"/>
+</svg>
