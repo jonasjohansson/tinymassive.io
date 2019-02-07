@@ -1,0 +1,138 @@
+:root {
+	--base: 16px;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	margin: 0;
+	padding: calc(var(--base) * 2) 0;
+	font: 18px/1.666 'Maison Neue Book', system-ui;
+	color: rgb(230, 230, 230);
+	background-color: rgba(0, 0, 0, 0.9);
+	/*background-color: #ffd400;*/
+	/*color: black;*/
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+figure img,
+figure video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+
+section,
+hr {
+	margin: 0 auto;
+	padding: 0 var(--base);
+	box-sizing: border-box;
+	max-width: 90ex;
+}
+
+hr {
+	opacity: 0.25;
+}
+
+a {
+	color: inherit;
+}
+
+h1 span {
+	display: none;
+}
+
+h2 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+h3,
+h4,
+h5 {
+	font-size: 1em;
+}
+
+h5 {
+	margin: 0.8em 0;
+	font-weight: normal;
+}
+
+ul {
+	list-style: square;
+}
+
+button {
+	position: relative;
+	padding: 4px;
+	top: -2px;
+	font-family: inherit;
+	cursor: pointer;
+	background: none;
+	color: inherit;
+}
+
+/* entries */
+
+.entry {
+	position: relative;
+	margin-left: 28px;
+}
+
+.entry .toggle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 2px;
+	left: -28px;
+}
+
+body:not(#now-playing) .entry:not(.show-info) p {
+	display: none;
+}
+
+.entry .time {
+	margin-right: var(--base);
+}
+
+.entry .name,
+.entry .bio,
+.entry .credits {
+	opacity: 0.8;
+}
+
+.entry .bio,
+.entry .credits {
+	font-style: italic;
+}
+
+/* sponsors */
+
+.sponsors {
+	margin: 0;
+}
+
+.sponsors a {
+	display: inline;
+}
+
+.sponsors a:not(:last-child) {
+	margin-right: calc(var(--base) * 1.5);
+}
+
+/* import */
+
+@font-face {
+	font-family: 'Maison Neue Book';
+	src: url('MaisonNeue-Book.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

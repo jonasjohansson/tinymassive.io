@@ -75,7 +75,7 @@ function display(data) {
 
 		let $entry = createEl('div','entry');
 		let $inner = createEl('div','inner',$entry);
-		
+
 		if (nowPlaying) {
 			let $title = createEl('h3','title',$inner);
 			$title.innerHTML = `${data.title} <span class="name">${data.name}</span>`;
