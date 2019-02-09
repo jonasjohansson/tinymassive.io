@@ -69,7 +69,7 @@ function display(data) {
 			credits: row['credits'],
 			link: row['link'],
 			email: row['email'],
-			day: row['day'],
+			day: row['day'].toLowerCase(),
 			time: row['time'],
 		};
 
